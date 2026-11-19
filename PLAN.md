@@ -8,7 +8,7 @@ records every place a run departed from [PROTOCOL.md](PROTOCOL.md).
 
 A scientist who wants a robot to do the dull handling around a liquid handler has 3 ways to get it:
 tell a general robot model what to do, teach it with demonstrations, or hand the job to a general
-language model that drives the arms through tools. This project measures each on the same 15 chores
+language model that drives the arms through tools. This project measures each on the same set of chores
 with the same scoring.
 
 1. **Told.** How far does one plain sentence get? Which chores work, which never do, and how much
@@ -25,7 +25,8 @@ it work when taught, how much teaching, and does that hold on a real bench.
 
 ## Where it stands (2026-11-18)
 
-- 15 chores are built in simulation. Their scoring was checked by scripts before any model ran.
+- The first 15 chores are built in simulation. Their scoring was checked by scripts before any model
+  ran. 15 is where the set starts, not its scope.
 - Dream-1 zero-shot: batch 1 of 2 (15 chores x 3 layouts) is scored: 7 passes in 45 takes by the frozen
   rules, and none on a plate chore. The numbers and their caveats are in the [README](README.md#results)
   and in [DEVIATIONS.md](DEVIATIONS.md).
@@ -66,7 +67,7 @@ skipped quietly.
    - `camera_env/` gives a model the current pictures from the same 3 cameras and a small command
      set (move a hand, grip, wait, done), with no object positions. The clock, the layouts and the
      scoring are the benchmark's own.
-   - Done so far: 1 chore, 3 layouts, 1 model with a score. Next: all 15 chores, with Claude and
+   - Done so far: 1 chore, 3 layouts, 1 model with a score. Next: every chore, with Claude and
      GPT-6.2 Astra as entries.
    - They are reported as a separate tier, because acting through commands with inverse
      kinematics is not the same job as driving joints.
@@ -87,7 +88,9 @@ skipped quietly.
      to the deck of a liquid handler.
    - Gate: for each chore, the gap between the simulated and the real pass count. A chore where
      the simulator is wrong is reported as a finding about the simulator.
-7. **Harder labware.** Screw caps, lids and seals, bags and plate sleeves, and liquid.
+7. **More chores.** The set grows past 15. Next in line: uncapping a tube, lids and seals, opening
+   plate sleeves and bags, tip boxes onto a deck, and liquid. A new chore joins the way the first
+   15 did: one sentence, a scored end state, and an oracle and traps that test its scoring.
 
 Steps 1 to 5 need no robot. This plan assumes no hardware: step 6 is taken when a station is
 available, and until then step 5 is the stand-in.

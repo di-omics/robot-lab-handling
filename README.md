@@ -1,6 +1,7 @@
 # robot-lab-handling
 
-**Status: simulation only.** 15 everyday lab handling tasks are built and their scoring is checked by scripts.
+**Status: simulation only.** The first 15 everyday lab handling tasks are built and their scoring is checked by scripts.
+The set is meant to grow.
 Dream-1 ran the joint-control baseline. A separate paired pilot evaluated Codex on three plate-placement layouts.
 The recorded scores and the interrupted Fable attempts are listed below. [PLAN.md](PLAN.md) says what comes next.
 
@@ -9,7 +10,7 @@ The recorded scores and the interrupted Fable attempts are listed below. [PLAN.m
 *Dream-1, zero-shot, in simulation, sped up 8x and 4x: racking 2 tubes (a practice layout, asked in exact words),
 binning 2 used tubes, and carrying a rack with both hands. These 3 takes passed. Most takes do not: see Results.*
 
-![The 15 task benches as the overhead camera sees them](stills/lab-handling-bench-tasks.jpg)
+![The first 15 task benches as the overhead camera sees them](stills/lab-handling-bench-tasks.jpg)
 
 ## What this is
 
@@ -43,6 +44,8 @@ position or into a hotel, stacking and unstacking plates, binning used tubes.
 | 13 | `unstack_plate` | Take the top plate off the stack and put it on the black tray. | The top plate sits flat in the tray, and the other two plates are still stacked where they started. | 150 s |
 | 14 | `small_tubes_to_rack` | Put the small tubes in the rack. | All three 1.5 mL tubes stand in holes of the rack, hands off. | 300 s |
 | 15 | `rack_into_box` | Put the tube rack in the box. | The rack sits flat on the floor of the box with both tubes still in its wells, hands off. | 180 s |
+
+These 15 are the first set, not the scope. More tasks are planned: see [PLAN.md](PLAN.md).
 
 Every task has 3 wordings (plain, terse and precise) and one control instruction that names things that are
 not on the bench, to measure how much the phrasing matters and whether the model listens at all.
@@ -108,7 +111,7 @@ On plate placement, Codex passed 2 of 3 layouts. It lifted the plate over the tr
 
 [Watch Codex and Dream on layout 100, side by side at 6x speed](runs/2026-11-18-camera-comparison/plate-comparison-s100.mp4). Replaying the three Codex action logs reproduced every terminal score. On layout 102 the stationary plate ended at a 6.764-degree tilt against a 5-degree limit, with its other final checks satisfied. [Replay audit](runs/2026-11-18-camera-comparison/replay-audit.json). [Terminal measurements](runs/2026-11-18-camera-comparison/outcome-diagnostics.json).
 
-Read the [paired scores, per-layout stages and uncertainty intervals](runs/2026-11-18-camera-comparison/RESULTS.md) and [pre-registered pilot protocol](runs/2026-11-18-camera-comparison/PROTOCOL.md). A separate [15-task Dream baseline](runs/2026-11-18-zero-shot/results.md) covers all 45 task-layout pairs: 7 passes by the frozen rules, and none on the 6 plate tasks (0 of 18). Its frozen handover rule awarded a pass on layout 102 when the right arm picked up the tube on its own. [Deviations and incomplete takes](DEVIATIONS.md).
+Read the [paired scores, per-layout stages and uncertainty intervals](runs/2026-11-18-camera-comparison/RESULTS.md) and [pre-registered pilot protocol](runs/2026-11-18-camera-comparison/PROTOCOL.md). A separate [Dream baseline over these first 15 tasks](runs/2026-11-18-zero-shot/results.md) covers all 45 task-layout pairs: 7 passes by the frozen rules, and none on the 6 plate tasks (0 of 18). Its frozen handover rule awarded a pass on layout 102 when the right arm picked up the tube on its own. [Deviations and incomplete takes](DEVIATIONS.md).
 
 The scripted plate expert completed all 50 demonstration layouts. The saved dataset passed Dream's local validation with 10,049 frames at 10 fps across three cameras. The expert has access to object poses. Its demonstration results are listed separately from the model scores. [Demonstration notes and preview](sim_demos/NOTES.md). [Proposed held-out experiment](sim_demos/PROPOSAL.md)
 
