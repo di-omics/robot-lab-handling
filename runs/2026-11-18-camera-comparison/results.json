@@ -20,11 +20,11 @@
     },
     "Dream-1": {
       "passes": 0,
-      "takes": 2,
-      "interrupted": 1,
+      "takes": 3,
+      "interrupted": 0,
       "exact_95": [
         0.0,
-        0.841886116991581
+        0.7075982261787133
       ]
     }
   },
@@ -117,14 +117,23 @@
       "policy": "Dream-1",
       "model": "dreamlabs/dream-1-beta",
       "seed": 101,
-      "status": "interrupted",
-      "sim_s": 0.0,
-      "success": null,
+      "status": "complete",
+      "success": false,
+      "stages": {
+        "plate_lifted": 67.85,
+        "plate_over_tray": null,
+        "plate_in_tray": null
+      },
+      "sim_s": 150.0,
+      "pass_at_s": null,
+      "wall_s": 159.7,
+      "calls": 63,
+      "estimated_usd": 0.0882,
       "error_attempts": [
         "20261118-165954-plate_to_tray-plain-s101-dream-1-beta"
       ],
-      "calls": 0,
-      "reason": "Dream service or infrastructure error. No completed take available."
+      "summary": "runs/2026-11-18-zero-shot/20261118-193418-plate_to_tray-plain-s101-dream-1-beta/summary.json",
+      "summary_sha256": "b5e6c091ebf05a8f19d752878e8a8a83a0f357a86ae0216201bd677f9b07d504"
     },
     {
       "policy": "Codex",

@@ -6,7 +6,7 @@ Put the plate on the black tray. Three layouts were assigned to each policy unde
 | --- | ---: | --- | --- |
 | Codex | 2/3 | 9.4% to 99.2% | Camera-guided Cartesian commands |
 | Fable | Unscored (3 interrupted) | · | Camera-guided Cartesian commands |
-| Dream-1 | 0/2 | 0.0% to 84.2% | 48 joint actions per call |
+| Dream-1 | 0/3 | 0.0% to 70.8% | 48 joint actions per call |
 
 | Layout | Policy | Pass | Lifted at | Over tray at | In tray at | Passed at | Simulated duration | Commands or calls |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -15,13 +15,14 @@ Put the plate on the black tray. Three layouts were assigned to each policy unde
 | 100 | Dream-1 | No | · | · | · | · | 150.0 s | 63 calls |
 | 101 | Codex | Yes | 16.1 s | 19.6 s | 69.9 s | 70.9 s | 71.9 s | 40 commands |
 | 101 | Fable | Interrupted | · | · | · | · | 3.0 s | 1 commands |
-| 101 | Dream-1 | Interrupted | · | · | · | · | 0.0 s | 0 calls |
+| 101 | Dream-1 | No | 67.8 s | · | · | · | 150.0 s | 63 calls |
 | 102 | Codex | No | 21.7 s | 24.1 s | · | · | 150.0 s | 21 commands |
 | 102 | Fable | Interrupted | · | · | · | · | 5.5 s | 2 commands |
 | 102 | Dream-1 | No | 43.0 s | · | · | · | 150.0 s | 63 calls |
 
 Dream received nine RGB frames per camera, joint angles and gripper state per call. Codex and Fable received current RGB views, robot proprioception and a calibrated pixel-to-plane inverse-kinematics controller. Each language model started with a fresh context on each seed. The three layouts estimate this one task imprecisely. The controller difference limits conclusions about the underlying models.
 
+Dream layout 101 had 1 interrupted attempt before the recorded completion. The frozen protocol permits one same-layout infrastructure retry.
 
 Claude Fable 5.2 was stopped by the operator before terminal scoring on all three layouts. Its partial traces are archived. There is no Fable success rate or ranking from this pilot.
 

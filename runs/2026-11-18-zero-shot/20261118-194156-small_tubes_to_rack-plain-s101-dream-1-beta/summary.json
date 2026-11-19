@@ -1,0 +1,94 @@
+{
+  "task": "small_tubes_to_rack",
+  "title": "Rack the 1.5 mL tubes",
+  "prompt": "Put the small tubes in the rack.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 300.0,
+  "sim_s": 300.0,
+  "calls": 125,
+  "est_cost_usd": 0.175,
+  "stages": {
+    "epp_a_lifted": null,
+    "epp_a_in_rack": null,
+    "epp_b_lifted": null,
+    "epp_b_in_rack": null,
+    "epp_c_lifted": 145.15,
+    "epp_c_in_rack": null
+  },
+  "stages_reached": 1,
+  "stages_total": 6,
+  "progress": 0.167,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "rack": {
+      "pos": [
+        0.0088,
+        -0.0329,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "epp_a": {
+      "pos": [
+        0.0407,
+        0.085,
+        0.7644
+      ],
+      "tilt_deg": 86.8
+    },
+    "epp_b": {
+      "pos": [
+        -0.0071,
+        0.1025,
+        0.7644
+      ],
+      "tilt_deg": 86.8
+    },
+    "epp_c": {
+      "pos": [
+        0.0078,
+        -0.026,
+        0.7911
+      ],
+      "tilt_deg": 83.2
+    }
+  },
+  "layout": {
+    "rack": [
+      0.0089,
+      -0.0328,
+      0.057
+    ],
+    "epp_a": [
+      -0.1278,
+      0.0951,
+      2.8988
+    ],
+    "epp_b": [
+      -0.1511,
+      0.0567,
+      3.0573
+    ],
+    "epp_c": [
+      0.1434,
+      0.0973,
+      2.1391
+    ]
+  },
+  "error": null,
+  "wall_s": 241.5,
+  "dir": "runs/2026-11-18-zero-shot/20261118-194156-small_tubes_to_rack-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T19:41:56-0800",
+  "median_call_s": 0.529,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

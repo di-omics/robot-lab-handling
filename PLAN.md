@@ -26,8 +26,8 @@ it work when taught, how much teaching, and does that hold on a real bench.
 ## Where it stands (2026-11-18)
 
 - 15 chores are built in simulation. Their scoring was checked by scripts before any model ran.
-- Dream-1 zero-shot: batch 1 of 2 (15 chores x 3 layouts) is mostly scored. Takes that stopped on
-  network errors are being rerun. The numbers and their caveats are in the [README](README.md#results)
+- Dream-1 zero-shot: batch 1 of 2 (15 chores x 3 layouts) is scored: 7 passes in 45 takes by the frozen
+  rules, and none on a plate chore. The numbers and their caveats are in the [README](README.md#results)
   and in [DEVIATIONS.md](DEVIATIONS.md).
 - 50 scripted demonstrations of 1 failing chore, `plate_to_tray`, are recorded and checked locally
   ([sim_demos/NOTES.md](sim_demos/NOTES.md)). A scripted hand can hold the plate, so that failure is

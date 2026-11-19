@@ -1,0 +1,72 @@
+{
+  "task": "sort_by_cap",
+  "title": "Sort tubes by cap colour",
+  "prompt": "Put the red tube in the left tray and the blue tube in the right tray.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 240.0,
+  "sim_s": 122.25,
+  "calls": 51,
+  "est_cost_usd": 0.0714,
+  "stages": {
+    "red_lifted": 24.4,
+    "red_in_left_tray": 30.9,
+    "blue_lifted": 113.1,
+    "blue_in_right_tray": 120.2
+  },
+  "stages_reached": 4,
+  "stages_total": 4,
+  "progress": 1.0,
+  "success": true,
+  "success_at_s": 121.2,
+  "success_at_end": true,
+  "objects": {
+    "tube_red": {
+      "pos": [
+        0.1879,
+        -0.0853,
+        0.7629
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_blue": {
+      "pos": [
+        -0.2123,
+        -0.0842,
+        0.7629
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "tube_red": [
+      -0.0443,
+      0.1118
+    ],
+    "tube_blue": [
+      0.0589,
+      0.1072
+    ],
+    "tray_left": [
+      0.2,
+      -0.1
+    ],
+    "tray_right": [
+      -0.2,
+      -0.1
+    ]
+  },
+  "error": null,
+  "wall_s": 100.6,
+  "dir": "runs/2026-11-18-zero-shot/20261118-194600-sort_by_cap-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T19:46:00-0800",
+  "median_call_s": 0.535,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "task": "plate_to_tray",
+  "title": "Load a plate onto the reader tray",
+  "prompt": "Put the plate on the black tray.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 150.0,
+  "calls": 63,
+  "est_cost_usd": 0.0882,
+  "stages": {
+    "plate_lifted": 67.85,
+    "plate_over_tray": null,
+    "plate_in_tray": null
+  },
+  "stages_reached": 1,
+  "stages_total": 3,
+  "progress": 0.333,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "plate": {
+      "pos": [
+        0.1181,
+        -0.0194,
+        0.7684
+      ],
+      "tilt_deg": 7.6
+    }
+  },
+  "layout": {
+    "plate": [
+      0.1506,
+      0.0666,
+      0.0684
+    ],
+    "tray": [
+      0.0015,
+      -0.0733,
+      0.0
+    ]
+  },
+  "error": null,
+  "wall_s": 159.7,
+  "dir": "runs/2026-11-18-zero-shot/20261118-193418-plate_to_tray-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T19:34:18-0800",
+  "median_call_s": 0.55,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

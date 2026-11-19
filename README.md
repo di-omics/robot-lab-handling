@@ -98,17 +98,17 @@ The [demonstration recorder](sim_demos/record.py) can generate scripted examples
 
 ## Results
 
-On plate placement, Codex passed 2 of 3 layouts. It lifted the plate over the tray on the third and ran out of time before seating it. Dream-1 passed 0 of its 2 completed layouts. The two policies both finished layouts 100 and 102, where Codex passed 1 of 2 and Dream-1 passed 0 of 2. Layout 101 has a Codex pass and an interrupted Dream take. Fable began all three layouts and the operator stopped its sessions before terminal scoring.
+On plate placement, Codex passed 2 of 3 layouts. It lifted the plate over the tray on the third and ran out of time before seating it. Dream-1 passed 0 of 3: it lifted the plate on 2 of the layouts and never got it over the tray. Fable began all three layouts and the operator stopped its sessions before terminal scoring.
 
 | Policy | Passes on completed layouts | Interrupted layouts | Controller |
 | --- | --- | --- | --- |
 | Codex (GPT-6.2 Astra) | 2 of 3 | 0 | Current RGB images and Cartesian arm commands |
-| Dream-1 | 0 of 2 | 1 | Nine-frame camera histories and 48-action joint chunks |
+| Dream-1 | 0 of 3 | 0 | Nine-frame camera histories and 48-action joint chunks |
 | Claude Fable 5.2 | Unscored | 3 | Same camera and Cartesian interface as Codex |
 
 [Watch Codex and Dream on layout 100, side by side at 6x speed](runs/2026-11-18-camera-comparison/plate-comparison-s100.mp4). Replaying the three Codex action logs reproduced every terminal score. On layout 102 the stationary plate ended at a 6.764-degree tilt against a 5-degree limit, with its other final checks satisfied. [Replay audit](runs/2026-11-18-camera-comparison/replay-audit.json). [Terminal measurements](runs/2026-11-18-camera-comparison/outcome-diagnostics.json).
 
-Read the [paired scores, per-layout stages and uncertainty intervals](runs/2026-11-18-camera-comparison/RESULTS.md) and [pre-registered pilot protocol](runs/2026-11-18-camera-comparison/PROTOCOL.md). A separate [15-task Dream baseline](runs/2026-11-18-zero-shot/results.md) reports the completed takes available in this snapshot. Its frozen handover rule awarded a pass on layout 102 when the right arm picked up the tube on its own. [Deviations and incomplete takes](DEVIATIONS.md).
+Read the [paired scores, per-layout stages and uncertainty intervals](runs/2026-11-18-camera-comparison/RESULTS.md) and [pre-registered pilot protocol](runs/2026-11-18-camera-comparison/PROTOCOL.md). A separate [15-task Dream baseline](runs/2026-11-18-zero-shot/results.md) covers all 45 task-layout pairs: 7 passes by the frozen rules, and none on the 6 plate tasks (0 of 18). Its frozen handover rule awarded a pass on layout 102 when the right arm picked up the tube on its own. [Deviations and incomplete takes](DEVIATIONS.md).
 
 The scripted plate expert completed all 50 demonstration layouts. The saved dataset passed Dream's local validation with 10,049 frames at 10 fps across three cameras. The expert has access to object poses. Its demonstration results are listed separately from the model scores. [Demonstration notes and preview](sim_demos/NOTES.md). [Proposed held-out experiment](sim_demos/PROPOSAL.md)
 

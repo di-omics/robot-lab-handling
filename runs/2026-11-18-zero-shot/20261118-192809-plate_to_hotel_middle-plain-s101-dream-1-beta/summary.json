@@ -1,0 +1,56 @@
+{
+  "task": "plate_to_hotel_middle",
+  "title": "Put a plate on the middle shelf of the hotel",
+  "prompt": "Put the plate on the middle shelf.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 180.0,
+  "sim_s": 180.0,
+  "calls": 75,
+  "est_cost_usd": 0.105,
+  "stages": {
+    "plate_lifted": null,
+    "plate_lined_up_at_shelf": null,
+    "plate_on_shelf": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "plate": {
+      "pos": [
+        0.1689,
+        0.0672,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "plate": [
+      0.1689,
+      0.0672,
+      1.6164
+    ],
+    "hotel": [
+      0.16,
+      -0.16
+    ]
+  },
+  "error": null,
+  "wall_s": 188.0,
+  "dir": "runs/2026-11-18-zero-shot/20261118-192809-plate_to_hotel_middle-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T19:28:10-0800",
+  "median_call_s": 0.539,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

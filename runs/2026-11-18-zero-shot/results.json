@@ -26,18 +26,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Put the bottle on the gray platform.",
-      "takes": 2,
+      "takes": 3,
       "passes": 0,
       "range_95": [
         0.0,
-        0.842
+        0.708
       ],
-      "mean_progress": 0.5,
+      "mean_progress": 0.333,
       "median_pass_s": null,
-      "calls": 102,
-      "est_cost_usd": 0.143,
+      "calls": 153,
+      "est_cost_usd": 0.214,
       "seeds": [
         100,
+        101,
         102
       ]
     },
@@ -46,18 +47,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Put the plate on the black tray.",
-      "takes": 2,
+      "takes": 3,
       "passes": 0,
       "range_95": [
         0.0,
-        0.842
+        0.708
       ],
-      "mean_progress": 0.167,
+      "mean_progress": 0.222,
       "median_pass_s": null,
-      "calls": 126,
-      "est_cost_usd": 0.176,
+      "calls": 189,
+      "est_cost_usd": 0.265,
       "seeds": [
         100,
+        101,
         102
       ]
     },
@@ -66,18 +68,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Put the red tube in the left tray and the blue tube in the right tray.",
-      "takes": 2,
-      "passes": 0,
+      "takes": 3,
+      "passes": 1,
       "range_95": [
-        0.0,
-        0.842
+        0.008,
+        0.906
       ],
-      "mean_progress": 0.625,
-      "median_pass_s": null,
-      "calls": 200,
-      "est_cost_usd": 0.28,
+      "mean_progress": 0.75,
+      "median_pass_s": 121.2,
+      "calls": 251,
+      "est_cost_usd": 0.351,
       "seeds": [
         100,
+        101,
         102
       ]
     },
@@ -86,18 +89,20 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Throw the used tubes into the waste bin.",
-      "takes": 1,
-      "passes": 1,
+      "takes": 3,
+      "passes": 2,
       "range_95": [
-        0.025,
-        1.0
+        0.094,
+        0.992
       ],
-      "mean_progress": 1.0,
-      "median_pass_s": 66.2,
-      "calls": 28,
-      "est_cost_usd": 0.039,
+      "mean_progress": 0.75,
+      "median_pass_s": 81.275,
+      "calls": 169,
+      "est_cost_usd": 0.237,
       "seeds": [
-        101
+        100,
+        101,
+        102
       ]
     },
     {
@@ -126,18 +131,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Pick up the tube rack with both hands and put it on the gray mat.",
-      "takes": 2,
-      "passes": 1,
+      "takes": 3,
+      "passes": 2,
       "range_95": [
-        0.013,
-        0.987
+        0.094,
+        0.992
       ],
-      "mean_progress": 0.666,
-      "median_pass_s": 50.5,
-      "calls": 85,
-      "est_cost_usd": 0.119,
+      "mean_progress": 0.667,
+      "median_pass_s": 79.1,
+      "calls": 131,
+      "est_cost_usd": 0.183,
       "seeds": [
         100,
+        101,
         102
       ]
     },
@@ -167,18 +173,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Put the plate on the top shelf.",
-      "takes": 2,
+      "takes": 3,
       "passes": 0,
       "range_95": [
         0.0,
-        0.842
+        0.708
       ],
       "mean_progress": 0.0,
       "median_pass_s": null,
-      "calls": 150,
-      "est_cost_usd": 0.21,
+      "calls": 225,
+      "est_cost_usd": 0.315,
       "seeds": [
         100,
+        101,
         102
       ]
     },
@@ -187,18 +194,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Put the plate on the middle shelf.",
-      "takes": 2,
+      "takes": 3,
       "passes": 0,
       "range_95": [
         0.0,
-        0.842
+        0.708
       ],
       "mean_progress": 0.0,
       "median_pass_s": null,
-      "calls": 150,
-      "est_cost_usd": 0.21,
+      "calls": 225,
+      "est_cost_usd": 0.315,
       "seeds": [
         100,
+        101,
         102
       ]
     },
@@ -207,18 +215,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Put the plate on the bottom shelf.",
-      "takes": 2,
+      "takes": 3,
       "passes": 0,
       "range_95": [
         0.0,
-        0.842
+        0.708
       ],
-      "mean_progress": 0.334,
+      "mean_progress": 0.333,
       "median_pass_s": null,
-      "calls": 150,
-      "est_cost_usd": 0.21,
+      "calls": 225,
+      "est_cost_usd": 0.315,
       "seeds": [
         100,
+        101,
         102
       ]
     },
@@ -248,17 +257,18 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Take the top plate off the stack and put it on the black tray.",
-      "takes": 2,
+      "takes": 3,
       "passes": 0,
       "range_95": [
         0.0,
-        0.842
+        0.708
       ],
-      "mean_progress": 0.333,
+      "mean_progress": 0.222,
       "median_pass_s": null,
-      "calls": 126,
-      "est_cost_usd": 0.176,
+      "calls": 189,
+      "est_cost_usd": 0.265,
       "seeds": [
+        100,
         101,
         102
       ]
@@ -268,18 +278,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Put the small tubes in the rack.",
-      "takes": 2,
+      "takes": 3,
       "passes": 0,
       "range_95": [
         0.0,
-        0.842
+        0.708
       ],
-      "mean_progress": 0.416,
+      "mean_progress": 0.333,
       "median_pass_s": null,
-      "calls": 250,
-      "est_cost_usd": 0.35,
+      "calls": 375,
+      "est_cost_usd": 0.525,
       "seeds": [
         100,
+        101,
         102
       ]
     },
@@ -288,18 +299,19 @@
       "prompt_variant": "plain",
       "model": "dreamlabs/dream-1-beta",
       "prompt": "Put the tube rack in the box.",
-      "takes": 2,
+      "takes": 3,
       "passes": 0,
       "range_95": [
         0.0,
-        0.842
+        0.708
       ],
-      "mean_progress": 0.334,
+      "mean_progress": 0.222,
       "median_pass_s": null,
-      "calls": 150,
-      "est_cost_usd": 0.21,
+      "calls": 225,
+      "est_cost_usd": 0.315,
       "seeds": [
         100,
+        101,
         102
       ]
     }
@@ -3502,6 +3514,789 @@
       "dir": "runs/2026-11-18-zero-shot/20261118-190024-bottle_to_shelf-plain-s101-dream-1-beta",
       "started_at": "2026-11-18T19:00:24-0800",
       "median_call_s": null,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "tubes_to_waste",
+      "title": "Bin the used tubes",
+      "prompt": "Throw the used tubes into the waste bin.",
+      "prompt_variant": "plain",
+      "seed": 100,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 240.0,
+      "sim_s": 240.0,
+      "calls": 100,
+      "est_cost_usd": 0.14,
+      "stages": {
+        "tube_a_lifted": null,
+        "tube_a_in_bin": null,
+        "tube_b_lifted": 28.8,
+        "tube_b_in_bin": null
+      },
+      "stages_reached": 1,
+      "stages_total": 4,
+      "progress": 0.25,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "tube_a": {
+          "pos": [
+            -0.581,
+            0.3,
+            0.0147
+          ],
+          "tilt_deg": 90.0
+        },
+        "tube_b": {
+          "pos": [
+            -0.2334,
+            0.1059,
+            0.7745
+          ],
+          "tilt_deg": 93.3
+        }
+      },
+      "layout": {
+        "tube_a": [
+          0.16,
+          0.1029
+        ],
+        "tube_b": [
+          -0.1363,
+          0.0763
+        ],
+        "bin": [
+          0.0095,
+          -0.0581
+        ]
+      },
+      "error": null,
+      "wall_s": 190.6,
+      "dir": "runs/2026-11-18-zero-shot/20261118-191546-tubes_to_waste-plain-s100-dream-1-beta",
+      "started_at": "2026-11-18T19:15:46-0800",
+      "median_call_s": 0.446,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "unstack_plate",
+      "title": "Take the top plate off a stack",
+      "prompt": "Take the top plate off the stack and put it on the black tray.",
+      "prompt_variant": "plain",
+      "seed": 100,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "top_plate_lifted_alone": null,
+        "plate_over_tray": null,
+        "plate_in_tray": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate_1": {
+          "pos": [
+            0.1537,
+            0.0658,
+            0.7598
+          ],
+          "tilt_deg": 0.0
+        },
+        "plate_2": {
+          "pos": [
+            0.1505,
+            0.0602,
+            0.774
+          ],
+          "tilt_deg": 0.1
+        },
+        "plate_3": {
+          "pos": [
+            0.1374,
+            0.0528,
+            0.7882
+          ],
+          "tilt_deg": 0.1
+        }
+      },
+      "layout": {
+        "stack": [
+          0.1567,
+          0.0719,
+          -0.0422
+        ],
+        "tray": [
+          -0.0073,
+          -0.0624,
+          0.0
+        ]
+      },
+      "error": null,
+      "wall_s": 233.7,
+      "dir": "runs/2026-11-18-zero-shot/20261118-191859-unstack_plate-plain-s100-dream-1-beta",
+      "started_at": "2026-11-18T19:18:59-0800",
+      "median_call_s": 0.519,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "bottle_to_shelf",
+      "title": "Put a reagent bottle on the shelf",
+      "prompt": "Put the bottle on the gray platform.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 120.0,
+      "sim_s": 120.05,
+      "calls": 51,
+      "est_cost_usd": 0.0714,
+      "stages": {
+        "bottle_lifted": null,
+        "bottle_over_shelf": null,
+        "bottle_on_shelf": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "bottle": {
+          "pos": [
+            -0.0819,
+            0.0252,
+            0.7846
+          ],
+          "tilt_deg": 4.0
+        }
+      },
+      "layout": {
+        "bottle": [
+          -0.1067,
+          0.0858
+        ],
+        "shelf": [
+          -0.2043,
+          -0.0582
+        ]
+      },
+      "error": null,
+      "wall_s": 130.3,
+      "dir": "runs/2026-11-18-zero-shot/20261118-192254-bottle_to_shelf-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:22:54-0800",
+      "median_call_s": 0.513,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "plate_to_hotel_bottom",
+      "title": "Put a plate on the bottom shelf of the hotel",
+      "prompt": "Put the plate on the bottom shelf.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 180.0,
+      "sim_s": 180.0,
+      "calls": 75,
+      "est_cost_usd": 0.105,
+      "stages": {
+        "plate_lifted": null,
+        "plate_lined_up_at_shelf": 57.9,
+        "plate_on_shelf": null
+      },
+      "stages_reached": 1,
+      "stages_total": 3,
+      "progress": 0.333,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1431,
+            0.0275,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "plate": [
+          0.1689,
+          0.0672,
+          1.6164
+        ],
+        "hotel": [
+          0.16,
+          -0.16
+        ]
+      },
+      "error": null,
+      "wall_s": 182.2,
+      "dir": "runs/2026-11-18-zero-shot/20261118-192505-plate_to_hotel_bottom-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:25:06-0800",
+      "median_call_s": 0.448,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "plate_to_hotel_middle",
+      "title": "Put a plate on the middle shelf of the hotel",
+      "prompt": "Put the plate on the middle shelf.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 180.0,
+      "sim_s": 180.0,
+      "calls": 75,
+      "est_cost_usd": 0.105,
+      "stages": {
+        "plate_lifted": null,
+        "plate_lined_up_at_shelf": null,
+        "plate_on_shelf": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1689,
+            0.0672,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "plate": [
+          0.1689,
+          0.0672,
+          1.6164
+        ],
+        "hotel": [
+          0.16,
+          -0.16
+        ]
+      },
+      "error": null,
+      "wall_s": 188.0,
+      "dir": "runs/2026-11-18-zero-shot/20261118-192809-plate_to_hotel_middle-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:28:10-0800",
+      "median_call_s": 0.539,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "plate_to_hotel_top",
+      "title": "Put a plate on the top shelf of the hotel",
+      "prompt": "Put the plate on the top shelf.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 180.0,
+      "sim_s": 180.0,
+      "calls": 75,
+      "est_cost_usd": 0.105,
+      "stages": {
+        "plate_lifted": null,
+        "plate_lined_up_at_shelf": null,
+        "plate_on_shelf": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1668,
+            0.0654,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "plate": [
+          0.1689,
+          0.0672,
+          1.6164
+        ],
+        "hotel": [
+          0.16,
+          -0.16
+        ]
+      },
+      "error": null,
+      "wall_s": 177.6,
+      "dir": "runs/2026-11-18-zero-shot/20261118-193119-plate_to_hotel_top-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:31:19-0800",
+      "median_call_s": 0.647,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "plate_to_tray",
+      "title": "Load a plate onto the reader tray",
+      "prompt": "Put the plate on the black tray.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": 67.85,
+        "plate_over_tray": null,
+        "plate_in_tray": null
+      },
+      "stages_reached": 1,
+      "stages_total": 3,
+      "progress": 0.333,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1181,
+            -0.0194,
+            0.7684
+          ],
+          "tilt_deg": 7.6
+        }
+      },
+      "layout": {
+        "plate": [
+          0.1506,
+          0.0666,
+          0.0684
+        ],
+        "tray": [
+          0.0015,
+          -0.0733,
+          0.0
+        ]
+      },
+      "error": null,
+      "wall_s": 159.7,
+      "dir": "runs/2026-11-18-zero-shot/20261118-193418-plate_to_tray-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:34:18-0800",
+      "median_call_s": 0.55,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "rack_carry",
+      "title": "Carry a full rack with both hands",
+      "prompt": "Pick up the tube rack with both hands and put it on the gray mat.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 108.75,
+      "calls": 46,
+      "est_cost_usd": 0.0644,
+      "stages": {
+        "rack_lifted_level": 18.1,
+        "rack_over_mat": null,
+        "rack_on_mat": 98.65
+      },
+      "stages_reached": 2,
+      "stages_total": 3,
+      "progress": 0.667,
+      "success": true,
+      "success_at_s": 107.7,
+      "success_at_end": true,
+      "objects": {
+        "rack": {
+          "pos": [
+            0.0024,
+            -0.0616,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "rack": [
+          0.0089,
+          0.0772,
+          0.0456
+        ],
+        "mat": [
+          0.0,
+          -0.08
+        ]
+      },
+      "error": null,
+      "wall_s": 141.2,
+      "dir": "runs/2026-11-18-zero-shot/20261118-193659-rack_carry-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:36:59-0800",
+      "median_call_s": 0.54,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "rack_into_box",
+      "title": "Put a loaded rack in a box",
+      "prompt": "Put the tube rack in the box.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 180.0,
+      "sim_s": 180.0,
+      "calls": 75,
+      "est_cost_usd": 0.105,
+      "stages": {
+        "rack_lifted_level": null,
+        "rack_over_box": null,
+        "rack_in_box_tubes_still_racked": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "rack": {
+          "pos": [
+            -0.0026,
+            0.0046,
+            0.8061
+          ],
+          "tilt_deg": 90.1
+        },
+        "tube_a": {
+          "pos": [
+            0.0823,
+            -0.0879,
+            0.7777
+          ],
+          "tilt_deg": 88.8
+        },
+        "tube_b": {
+          "pos": [
+            0.0589,
+            -0.0991,
+            0.7724
+          ],
+          "tilt_deg": 40.2
+        }
+      },
+      "layout": {
+        "rack": [
+          -0.0911,
+          0.0672,
+          0.057
+        ],
+        "box": [
+          0.1015,
+          -0.1033
+        ]
+      },
+      "error": null,
+      "wall_s": 152.8,
+      "dir": "runs/2026-11-18-zero-shot/20261118-193922-rack_into_box-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:39:22-0800",
+      "median_call_s": 0.524,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "small_tubes_to_rack",
+      "title": "Rack the 1.5 mL tubes",
+      "prompt": "Put the small tubes in the rack.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 300.0,
+      "sim_s": 300.0,
+      "calls": 125,
+      "est_cost_usd": 0.175,
+      "stages": {
+        "epp_a_lifted": null,
+        "epp_a_in_rack": null,
+        "epp_b_lifted": null,
+        "epp_b_in_rack": null,
+        "epp_c_lifted": 145.15,
+        "epp_c_in_rack": null
+      },
+      "stages_reached": 1,
+      "stages_total": 6,
+      "progress": 0.167,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "rack": {
+          "pos": [
+            0.0088,
+            -0.0329,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "epp_a": {
+          "pos": [
+            0.0407,
+            0.085,
+            0.7644
+          ],
+          "tilt_deg": 86.8
+        },
+        "epp_b": {
+          "pos": [
+            -0.0071,
+            0.1025,
+            0.7644
+          ],
+          "tilt_deg": 86.8
+        },
+        "epp_c": {
+          "pos": [
+            0.0078,
+            -0.026,
+            0.7911
+          ],
+          "tilt_deg": 83.2
+        }
+      },
+      "layout": {
+        "rack": [
+          0.0089,
+          -0.0328,
+          0.057
+        ],
+        "epp_a": [
+          -0.1278,
+          0.0951,
+          2.8988
+        ],
+        "epp_b": [
+          -0.1511,
+          0.0567,
+          3.0573
+        ],
+        "epp_c": [
+          0.1434,
+          0.0973,
+          2.1391
+        ]
+      },
+      "error": null,
+      "wall_s": 241.5,
+      "dir": "runs/2026-11-18-zero-shot/20261118-194156-small_tubes_to_rack-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:41:56-0800",
+      "median_call_s": 0.529,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "sort_by_cap",
+      "title": "Sort tubes by cap colour",
+      "prompt": "Put the red tube in the left tray and the blue tube in the right tray.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 240.0,
+      "sim_s": 122.25,
+      "calls": 51,
+      "est_cost_usd": 0.0714,
+      "stages": {
+        "red_lifted": 24.4,
+        "red_in_left_tray": 30.9,
+        "blue_lifted": 113.1,
+        "blue_in_right_tray": 120.2
+      },
+      "stages_reached": 4,
+      "stages_total": 4,
+      "progress": 1.0,
+      "success": true,
+      "success_at_s": 121.2,
+      "success_at_end": true,
+      "objects": {
+        "tube_red": {
+          "pos": [
+            0.1879,
+            -0.0853,
+            0.7629
+          ],
+          "tilt_deg": 0.0
+        },
+        "tube_blue": {
+          "pos": [
+            -0.2123,
+            -0.0842,
+            0.7629
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "tube_red": [
+          -0.0443,
+          0.1118
+        ],
+        "tube_blue": [
+          0.0589,
+          0.1072
+        ],
+        "tray_left": [
+          0.2,
+          -0.1
+        ],
+        "tray_right": [
+          -0.2,
+          -0.1
+        ]
+      },
+      "error": null,
+      "wall_s": 100.6,
+      "dir": "runs/2026-11-18-zero-shot/20261118-194600-sort_by_cap-plain-s101-dream-1-beta",
+      "started_at": "2026-11-18T19:46:00-0800",
+      "median_call_s": 0.535,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1"
+      }
+    },
+    {
+      "task": "tubes_to_waste",
+      "title": "Bin the used tubes",
+      "prompt": "Throw the used tubes into the waste bin.",
+      "prompt_variant": "plain",
+      "seed": 102,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 240.0,
+      "sim_s": 97.4,
+      "calls": 41,
+      "est_cost_usd": 0.0574,
+      "stages": {
+        "tube_a_lifted": 91.8,
+        "tube_a_in_bin": 95.35,
+        "tube_b_lifted": 26.85,
+        "tube_b_in_bin": 30.1
+      },
+      "stages_reached": 4,
+      "stages_total": 4,
+      "progress": 1.0,
+      "success": true,
+      "success_at_s": 96.35,
+      "success_at_end": true,
+      "objects": {
+        "tube_a": {
+          "pos": [
+            0.0071,
+            -0.0348,
+            0.7714
+          ],
+          "tilt_deg": 37.8
+        },
+        "tube_b": {
+          "pos": [
+            -0.0088,
+            -0.0709,
+            0.7629
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "tube_a": [
+          0.1398,
+          0.1026
+        ],
+        "tube_b": [
+          -0.1203,
+          0.0839
+        ],
+        "bin": [
+          0.0037,
+          -0.0607
+        ]
+      },
+      "error": null,
+      "wall_s": 79.3,
+      "dir": "runs/2026-11-18-zero-shot/20261118-194741-tubes_to_waste-plain-s102-dream-1-beta",
+      "started_at": "2026-11-18T19:47:41-0800",
+      "median_call_s": 0.514,
       "versions": {
         "labbench": "0.1.0",
         "code": "92c256eb309b",

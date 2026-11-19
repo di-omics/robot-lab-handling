@@ -1,0 +1,68 @@
+{
+  "task": "tubes_to_waste",
+  "title": "Bin the used tubes",
+  "prompt": "Throw the used tubes into the waste bin.",
+  "prompt_variant": "plain",
+  "seed": 102,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 240.0,
+  "sim_s": 97.4,
+  "calls": 41,
+  "est_cost_usd": 0.0574,
+  "stages": {
+    "tube_a_lifted": 91.8,
+    "tube_a_in_bin": 95.35,
+    "tube_b_lifted": 26.85,
+    "tube_b_in_bin": 30.1
+  },
+  "stages_reached": 4,
+  "stages_total": 4,
+  "progress": 1.0,
+  "success": true,
+  "success_at_s": 96.35,
+  "success_at_end": true,
+  "objects": {
+    "tube_a": {
+      "pos": [
+        0.0071,
+        -0.0348,
+        0.7714
+      ],
+      "tilt_deg": 37.8
+    },
+    "tube_b": {
+      "pos": [
+        -0.0088,
+        -0.0709,
+        0.7629
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "tube_a": [
+      0.1398,
+      0.1026
+    ],
+    "tube_b": [
+      -0.1203,
+      0.0839
+    ],
+    "bin": [
+      0.0037,
+      -0.0607
+    ]
+  },
+  "error": null,
+  "wall_s": 79.3,
+  "dir": "runs/2026-11-18-zero-shot/20261118-194741-tubes_to_waste-plain-s102-dream-1-beta",
+  "started_at": "2026-11-18T19:47:41-0800",
+  "median_call_s": 0.514,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

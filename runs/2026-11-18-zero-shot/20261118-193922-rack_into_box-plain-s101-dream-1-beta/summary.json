@@ -1,0 +1,72 @@
+{
+  "task": "rack_into_box",
+  "title": "Put a loaded rack in a box",
+  "prompt": "Put the tube rack in the box.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 180.0,
+  "sim_s": 180.0,
+  "calls": 75,
+  "est_cost_usd": 0.105,
+  "stages": {
+    "rack_lifted_level": null,
+    "rack_over_box": null,
+    "rack_in_box_tubes_still_racked": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "rack": {
+      "pos": [
+        -0.0026,
+        0.0046,
+        0.8061
+      ],
+      "tilt_deg": 90.1
+    },
+    "tube_a": {
+      "pos": [
+        0.0823,
+        -0.0879,
+        0.7777
+      ],
+      "tilt_deg": 88.8
+    },
+    "tube_b": {
+      "pos": [
+        0.0589,
+        -0.0991,
+        0.7724
+      ],
+      "tilt_deg": 40.2
+    }
+  },
+  "layout": {
+    "rack": [
+      -0.0911,
+      0.0672,
+      0.057
+    ],
+    "box": [
+      0.1015,
+      -0.1033
+    ]
+  },
+  "error": null,
+  "wall_s": 152.8,
+  "dir": "runs/2026-11-18-zero-shot/20261118-193922-rack_into_box-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T19:39:22-0800",
+  "median_call_s": 0.524,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}
