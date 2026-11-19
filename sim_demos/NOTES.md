@@ -129,7 +129,7 @@ position within 8 mm.
 - **One way to do it.** Every demonstration uses the left hand, the same grasp and the same path shape. A
   fine-tune on these will learn this one style.
 
-## Commands (run, from the `lab-handling-bench` folder)
+## Commands (run, from the repo root)
 
 ```bash
 ~/dream-env/bin/python -m sim_demos.record --keep 50
@@ -153,7 +153,7 @@ nothing and needs no key.
 and when to run it is the account owner's decision. Replace `<username>` with the account's Dream username.
 
 ```python
-# NOT RUN. Uses the Dream API key and spends money. Run from the lab-handling-bench folder.
+# NOT RUN. Uses the Dream API key and spends money. Run from the repo root.
 import json, time
 from dream import datasets, fine_tuning
 

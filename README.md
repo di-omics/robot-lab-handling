@@ -1,4 +1,4 @@
-# lab-handling-bench
+# robotic-arm-lab-handling
 
 **Status: simulation only.** 15 everyday lab handling tasks are built and their scoring is checked by scripts.
 Dream-1 ran the joint-control baseline. A separate paired pilot evaluated Codex on three plate-placement layouts.
