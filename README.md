@@ -120,3 +120,7 @@ The scripted plate expert completed all 50 demonstration layouts. The saved data
 - Clearances are close to real (2 mm around a tube in a well, 3 mm around a plate in the tray), which makes
   the insertion tasks hard on purpose.
 - The plate hotel's lower shelves cannot be reached from above, so they need the plate slid in from the front.
+
+## License
+
+MIT, see [LICENSE](LICENSE). The simulator comes from the `dreamlabs` library (Apache-2.0) and is not included here.
