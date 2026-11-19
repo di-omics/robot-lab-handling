@@ -1,0 +1,74 @@
+{
+  "task": "tubes_to_rack",
+  "title": "Rack the tubes",
+  "prompt": "Put the tubes in the rack.",
+  "prompt_variant": "plain",
+  "seed": 0,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 240.0,
+  "sim_s": 240.0,
+  "calls": 100,
+  "est_cost_usd": 0.14,
+  "stages": {
+    "tube_a_lifted": 38.9,
+    "tube_a_in_rack": null,
+    "tube_b_lifted": null,
+    "tube_b_in_rack": null
+  },
+  "stages_reached": 1,
+  "stages_total": 4,
+  "progress": 0.25,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "rack": {
+      "pos": [
+        0.0027,
+        -0.0446,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_a": {
+      "pos": [
+        -0.9283,
+        0.2765,
+        0.0147
+      ],
+      "tilt_deg": 88.8
+    },
+    "tube_b": {
+      "pos": [
+        -0.1064,
+        0.0919,
+        0.7747
+      ],
+      "tilt_deg": 88.8
+    }
+  },
+  "layout": {
+    "rack": [
+      0.0027,
+      -0.0446,
+      -0.0918
+    ],
+    "tube_a": [
+      0.1455,
+      0.0994
+    ],
+    "tube_b": [
+      -0.1276,
+      0.0932
+    ]
+  },
+  "error": null,
+  "wall_s": 195.7,
+  "dir": "runs/2026-11-18-tubes-to-rack/20261118-151705-tubes_to_rack-plain-s0-dream-1-beta",
+  "versions": {
+    "labbench": "0.1.0",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

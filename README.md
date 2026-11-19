@@ -2,7 +2,12 @@
 
 **Status: simulation only.** 15 everyday lab handling tasks are built and their scoring is checked by scripts.
 Dream-1 ran the joint-control baseline. A separate paired pilot evaluated Codex on three plate-placement layouts.
-The recorded scores and the interrupted Fable attempts are listed below.
+The recorded scores and the interrupted Fable attempts are listed below. [PLAN.md](PLAN.md) says what comes next.
+
+![3 zero-shot passes in simulation](media/zero_shot_passes.gif)
+
+*Dream-1, zero-shot, in simulation, sped up 8x and 4x: racking 2 tubes (a practice layout, asked in exact words),
+binning 2 used tubes, and carrying a rack with both hands. These 3 takes passed. Most takes do not: see Results.*
 
 ![The 15 task benches as the overhead camera sees them](stills/lab-handling-bench-tasks.jpg)
 

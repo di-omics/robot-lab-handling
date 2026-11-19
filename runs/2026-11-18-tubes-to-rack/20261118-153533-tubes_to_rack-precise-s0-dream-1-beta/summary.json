@@ -1,0 +1,74 @@
+{
+  "task": "tubes_to_rack",
+  "title": "Rack the tubes",
+  "prompt": "Pick up each tube and place it upright into an empty well of the blue rack.",
+  "prompt_variant": "precise",
+  "seed": 0,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 240.0,
+  "sim_s": 240.0,
+  "calls": 100,
+  "est_cost_usd": 0.14,
+  "stages": {
+    "tube_a_lifted": 12.4,
+    "tube_a_in_rack": null,
+    "tube_b_lifted": 52.15,
+    "tube_b_in_rack": 60.65
+  },
+  "stages_reached": 3,
+  "stages_total": 4,
+  "progress": 0.75,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "rack": {
+      "pos": [
+        0.0023,
+        -0.0444,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_a": {
+      "pos": [
+        -0.3453,
+        -0.7777,
+        0.0147
+      ],
+      "tilt_deg": 88.8
+    },
+    "tube_b": {
+      "pos": [
+        -0.0328,
+        -0.0244,
+        0.7638
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "rack": [
+      0.0027,
+      -0.0446,
+      -0.0918
+    ],
+    "tube_a": [
+      0.1455,
+      0.0994
+    ],
+    "tube_b": [
+      -0.1276,
+      0.0932
+    ]
+  },
+  "error": null,
+  "wall_s": 273.1,
+  "dir": "runs/2026-11-18-tubes-to-rack/20261118-153533-tubes_to_rack-precise-s0-dream-1-beta",
+  "versions": {
+    "labbench": "0.1.0",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}
