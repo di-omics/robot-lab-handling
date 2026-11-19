@@ -25,6 +25,23 @@ position or into a hotel, stacking and unstacking plates, binning used tubes.
   gripper openings, and one sentence.
 - **What is scored:** where the labware ends up, read from the simulator. No human judging.
 
+## Where things are
+
+| I want to | Look in | Command |
+|---|---|---|
+| See what the cameras see on a task | `labbench/tasks.py` | `python -m labbench stills --task tubes_to_rack` |
+| Check the scoring | `tests/test_tasks.py` | `python -m unittest -v tests.test_tasks` |
+| Run a robot model on a task | `labbench/take.py`, `labbench/baseline.py` | `python -m labbench take --task tubes_to_rack --seed 0` |
+| Read the results | `runs/` ([what each run is](runs/README.md)) | |
+| Drive the arms from pictures with a language model | `camera_env/` ([how](camera_env/README.md)) | `python -m camera_env --listen --task plate_to_tray --seed 0 --actor example --out /tmp/yam-practice-take` |
+| Record scripted demonstrations | `sim_demos/` ([notes](sim_demos/NOTES.md)) | `python -m sim_demos.record --keep 50` |
+| Know the rules a scored run followed | `PROTOCOL.md`, `DEVIATIONS.md` | |
+| Know what comes next | `PLAN.md` | |
+
+There are 3 names, on purpose. The repo is `robot-lab-handling`. The Python package is `labbench`: the scored
+results carry a fingerprint of that code, so it keeps its name. A few file comments and 1 image file still use
+the first name, `lab-handling-bench`.
+
 ## The tasks
 
 | # | Task | The robot is told | Passes when | Time limit |

@@ -5,7 +5,7 @@
 50 scripted demonstrations of the `plate_to_tray` chore ("Put the plate on the black tray."), recorded in the YAM
 MuJoCo sim under the real physics and saved as one LeRobot v2.1 dataset that passes Dream's local dataset check.
 They are for a Dream-1 fine-tune, to find out how much fine-tuning it takes to make a chore the model fails zero-shot
-work. Dream-1 has passed `plate_to_tray` 0 times so far (0 of 2 scored takes; a third stopped on a network error).
+work. Dream-1 has passed `plate_to_tray` 0 times so far (0 of 3 scored takes).
 
 ![8 moments of episode 0: what the 3 cameras recorded](media/contact_sheet_episode_000.jpg)
 
@@ -39,7 +39,7 @@ Short video of episode 0 (the 3 cameras as recorded, played at 2x): [media/demo_
      finger, below the limit. The fingers then act as springs and keep the plate centred (0.2 mm off centre in
      every test).
 - With both fixes, 20 of 20 test layouts passed before any recording.
-- A hint about the zero-shot failures, not tested further: in the 2 scored `plate_to_tray` takes with logs (seeds
+- A hint about the zero-shot failures, not tested further: in the first 2 scored `plate_to_tray` takes (seeds
   100 and 102), Dream-1's gripper command went below 0.5 in 59 of 63 and 49 of 63 calls. The plate only fits
   between the fingers above 0.91.
 
@@ -51,6 +51,12 @@ Short video of episode 0 (the 3 cameras as recorded, played at 2x): [media/demo_
 | `record.py` | Plays the expert on seeded layouts and writes the dataset; keeps successes only |
 | `check.py` | Runs Dream's local dataset check against `embodiment.json` and writes `validation_report.json` |
 | `media.py` | Makes the contact sheet and the short mp4 from the dataset's own videos |
+| `replay.py` | Replays every recorded episode from its stored actions alone and scores it again |
+| `subset.py` | Cuts the first N episodes into smaller datasets (the dose sets listed in `dose_sets.json`) |
+| `summary.py` | Computes the numbers quoted here and in `PROPOSAL.md`, into `summary.json` |
+| `PROPOSAL.md` | The proposed teaching study: the same model taught on 5, 20 and 50 demonstrations |
+| `record_plate_hold.py`, `check_plate_hold.py` | A separate, simpler demonstration set: lift the plate with the left hand and hold it. The recorder and its audit |
+| `seal_benchmark.py` | A grader for a harder two-handed chore, peeling the seal off a plate. No run in this repo uses it yet |
 | `embodiment.json` | The embodiment config the dataset is checked against |
 | `attempts.jsonl` | One line per attempt, kept or dropped: seed, stages, success time, where the plate ended, expert settings |
 | `validation_report.json` | The output of `validate_dataset` |

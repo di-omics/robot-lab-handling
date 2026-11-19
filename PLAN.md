@@ -35,7 +35,7 @@ it work when taught, how much teaching, and does that hold on a real bench.
   not the simulator refusing the grasp.
 - A camera-guided environment for tool-using models exists ([camera_env/](camera_env/README.md)). In a
   first paired pilot on plate placement, Codex (GPT-6.2 Astra) passed 2 of 3 layouts through it and
-  Dream-1 passed 0 of its 2 completed layouts
+  Dream-1 passed 0 of 3
   ([results](runs/2026-11-18-camera-comparison/RESULTS.md)). The 2 act through different controls, so
   this is not a ranking.
 - Nothing has been uploaded for training.

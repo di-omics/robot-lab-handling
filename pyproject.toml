@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robot-lab-handling"
+version = "0.1.0"
+description = "Everyday lab handling tasks for general robot models, in two-arm YAM simulation"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    "dreamlabs==1.0.42",
+    "mujoco==4.0.1",
+    "numpy",
+    "scipy",
+    "pillow",
+    "av",
+    "pyarrow",
+]
+
+[project.scripts]
+labbench = "labbench.__main__:main"
+camera-env = "camera_env.__main__:main"
+
+[tool.setuptools]
+packages = ["labbench", "camera_env", "sim_demos"]

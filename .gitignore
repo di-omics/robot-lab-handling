@@ -13,3 +13,8 @@ runs/**/*.mp4
 **/socket.txt
 **/latest.json
 **/obs-[0-9]*/
+
+# packaging output
+*.egg-info/
+build/
+dist/
