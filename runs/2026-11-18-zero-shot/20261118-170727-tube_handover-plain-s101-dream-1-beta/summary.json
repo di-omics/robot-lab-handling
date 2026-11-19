@@ -1,0 +1,55 @@
+{
+  "task": "tube_handover",
+  "title": "Pass a tube from hand to hand",
+  "prompt": "Pick up the tube with the left hand, pass it to the right hand, and put it in the tray on the right.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 180.0,
+  "sim_s": 180.0,
+  "calls": 75,
+  "est_cost_usd": 0.105,
+  "stages": {
+    "tube_lifted": 59.2,
+    "right_hand_has_it": null,
+    "tube_in_tray": null
+  },
+  "stages_reached": 1,
+  "stages_total": 3,
+  "progress": 0.333,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "tube": {
+      "pos": [
+        -0.7038,
+        -0.7498,
+        0.0147
+      ],
+      "tilt_deg": 88.8
+    }
+  },
+  "layout": {
+    "tube": [
+      0.3689,
+      -0.1028
+    ],
+    "tray": [
+      -0.36,
+      -0.1
+    ]
+  },
+  "error": null,
+  "wall_s": 171.0,
+  "dir": "runs/2026-11-18-zero-shot/20261118-170727-tube_handover-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T17:07:28-0800",
+  "median_call_s": 0.58,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

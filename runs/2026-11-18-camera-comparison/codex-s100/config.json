@@ -1,0 +1,11 @@
+{
+  "actor": "gpt-6.2-astra",
+  "task": "plate_to_tray",
+  "seed": 100,
+  "prompt": "Put the plate on the black tray.",
+  "seconds_allowed": 150.0,
+  "bench_code": "92c256eb309b",
+  "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+  "mujoco": "4.0.1",
+  "dreamlabs": "1.0.42"
+}

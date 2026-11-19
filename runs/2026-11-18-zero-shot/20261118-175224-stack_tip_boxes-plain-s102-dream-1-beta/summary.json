@@ -1,0 +1,65 @@
+{
+  "task": "stack_tip_boxes",
+  "title": "Stack the tip boxes",
+  "prompt": "Stack the two tip boxes.",
+  "prompt_variant": "plain",
+  "seed": 102,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 150.0,
+  "calls": 63,
+  "est_cost_usd": 0.0882,
+  "stages": {
+    "a_box_lifted": null,
+    "box_over_the_other": null,
+    "boxes_stacked": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "box_a": {
+      "pos": [
+        -0.0949,
+        0.0181,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "box_b": {
+      "pos": [
+        0.0253,
+        -0.0468,
+        0.7599
+      ],
+      "tilt_deg": 0.1
+    }
+  },
+  "layout": {
+    "box_a": [
+      -0.1382,
+      0.0721,
+      0.0972
+    ],
+    "box_b": [
+      0.0251,
+      -0.0456,
+      -0.0108
+    ]
+  },
+  "error": null,
+  "wall_s": 209.1,
+  "dir": "runs/2026-11-18-zero-shot/20261118-175224-stack_tip_boxes-plain-s102-dream-1-beta",
+  "started_at": "2026-11-18T17:52:24-0800",
+  "median_call_s": 0.698,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

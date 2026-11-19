@@ -1,0 +1,127 @@
+{
+  "analysis": "Post-hoc terminal measurements of completed Codex plate_to_tray takes. No diagnostics were exposed to the actors.",
+  "method": "Reapply the accepted action trace from the original seeded reset, using the same physics, camera projection, inverse kinematics and frozen scoring predicates. Pixels and video are omitted during replay. Compare all Tracker summary fields, action count and simulator time to the original.",
+  "bench_code": "92c256eb309b",
+  "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+  "reference": "labbench/score.py seated_in_nest and World.released; labbench/tasks.py _plate_scoring",
+  "terminal_criteria": {
+    "abs_tray_x_offset_mm": "<=5",
+    "abs_tray_y_offset_mm": "<=5",
+    "underside_height_relative_to_pocket_floor_mm": "strictly between -2 and 6",
+    "tilt_from_vertical_deg": "<=5",
+    "abs_relative_yaw_deg_mod_180": "<8",
+    "hands_off": "no robot-to-plate contact at distance <=1 mm",
+    "speed_mm_per_s": "<30",
+    "full_pass_hold_s": 1.5,
+    "stage_hold_s": 0.5
+  },
+  "takes": [
+    {
+      "seed": 100,
+      "action_sha256": "24f2d6c782a026fc6502b2645d9e3f44c02759ae993db5b279a25cf5bc74c30b",
+      "frozen_summary_reproduced": true,
+      "sim_s": 81.7,
+      "actions": 37,
+      "stages": {
+        "plate_lifted": 15.05,
+        "plate_over_tray": 18.5,
+        "plate_in_tray": 79.7
+      },
+      "success": true,
+      "instantaneous_terminal_predicate": true,
+      "terminal_measurements": {
+        "tray_x_offset_mm": 1.244,
+        "tray_y_offset_mm": 0.928,
+        "underside_height_relative_to_pocket_floor_mm": -0.012,
+        "tilt_from_vertical_deg": 0.0,
+        "relative_yaw_deg_mod_180": 0.067,
+        "hands_off": true,
+        "speed_mm_per_s": 0.0
+      },
+      "terminal_loaded_contact_normal_force_N": {
+        "tray_floor": 1.6677
+      },
+      "terminal_checks": {
+        "x_offset": true,
+        "y_offset": true,
+        "underside_height": true,
+        "tilt": true,
+        "yaw": true,
+        "hands_off": true,
+        "speed": true
+      }
+    },
+    {
+      "seed": 101,
+      "action_sha256": "0929c9466a8bb145d217b9bfd3e8dfba996aef8acc956bd7e859ccba2f12d35f",
+      "frozen_summary_reproduced": true,
+      "sim_s": 71.9,
+      "actions": 40,
+      "stages": {
+        "plate_lifted": 16.15,
+        "plate_over_tray": 19.55,
+        "plate_in_tray": 69.9
+      },
+      "success": true,
+      "instantaneous_terminal_predicate": true,
+      "terminal_measurements": {
+        "tray_x_offset_mm": 3.831,
+        "tray_y_offset_mm": 4.611,
+        "underside_height_relative_to_pocket_floor_mm": 5.571,
+        "tilt_from_vertical_deg": 4.639,
+        "relative_yaw_deg_mod_180": 2.435,
+        "hands_off": true,
+        "speed_mm_per_s": 0.0
+      },
+      "terminal_loaded_contact_normal_force_N": {
+        "tray_corner_guides": 0.913288,
+        "tray_floor": 0.752916
+      },
+      "terminal_checks": {
+        "x_offset": true,
+        "y_offset": true,
+        "underside_height": true,
+        "tilt": true,
+        "yaw": true,
+        "hands_off": true,
+        "speed": true
+      }
+    },
+    {
+      "seed": 102,
+      "action_sha256": "7155e5e2cd952e290288992e58daefc2d626f29969468fb6985362fd6101c0fc",
+      "frozen_summary_reproduced": true,
+      "sim_s": 150.0,
+      "actions": 21,
+      "stages": {
+        "plate_lifted": 21.7,
+        "plate_over_tray": 24.15,
+        "plate_in_tray": null
+      },
+      "success": false,
+      "instantaneous_terminal_predicate": false,
+      "terminal_measurements": {
+        "tray_x_offset_mm": 1.845,
+        "tray_y_offset_mm": 3.839,
+        "underside_height_relative_to_pocket_floor_mm": 5.019,
+        "tilt_from_vertical_deg": 6.764,
+        "relative_yaw_deg_mod_180": 0.076,
+        "hands_off": true,
+        "speed_mm_per_s": 0.0
+      },
+      "terminal_loaded_contact_normal_force_N": {
+        "tray_corner_guides": 0.791019,
+        "tray_floor": 0.875988
+      },
+      "terminal_checks": {
+        "x_offset": true,
+        "y_offset": true,
+        "underside_height": true,
+        "tilt": false,
+        "yaw": true,
+        "hands_off": true,
+        "speed": true
+      }
+    }
+  ]
+}

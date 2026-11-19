@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+# scratch output
+takes/
+takes_dry/
+stills/*
+!stills/lab-handling-bench-tasks.jpg
+# run folders keep their scores and contact sheets; the videos are too large for git
+runs/**/*.mp4
+
+# Local camera transport and unfiltered observation paths are specific to each machine.
+**/socket.txt
+**/latest.json
+**/obs-[0-9]*/

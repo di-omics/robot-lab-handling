@@ -1,0 +1,41 @@
+[
+  {
+    "policy": "Fable",
+    "model": "claude-fable-5-2",
+    "task": "plate_to_tray",
+    "seed": 100,
+    "bench_code": "92c256eb309b",
+    "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+    "status": "interrupted",
+    "commands": 1,
+    "sim_s": 3.0,
+    "success": null,
+    "reason": "Operator requested an end to Claude use before a terminal score."
+  },
+  {
+    "policy": "Fable",
+    "model": "claude-fable-5-2",
+    "task": "plate_to_tray",
+    "seed": 101,
+    "bench_code": "92c256eb309b",
+    "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+    "status": "interrupted",
+    "commands": 1,
+    "sim_s": 3.0,
+    "success": null,
+    "reason": "Operator requested an end to Claude use before a terminal score."
+  },
+  {
+    "policy": "Fable",
+    "model": "claude-fable-5-2",
+    "task": "plate_to_tray",
+    "seed": 102,
+    "bench_code": "92c256eb309b",
+    "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+    "status": "interrupted",
+    "commands": 2,
+    "sim_s": 5.5,
+    "success": null,
+    "reason": "Operator requested an end to Claude use before a terminal score."
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "task": "rack_into_box",
+  "title": "Put a loaded rack in a box",
+  "prompt": "Put the tube rack in the box.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 180.0,
+  "sim_s": 0.0,
+  "calls": 0,
+  "est_cost_usd": 0.0,
+  "stages": {
+    "rack_lifted_level": null,
+    "rack_over_box": null,
+    "rack_in_box_tubes_still_racked": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "rack": {
+      "pos": [
+        -0.0911,
+        0.0672,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_a": {
+      "pos": [
+        -0.128,
+        0.0461,
+        0.7638
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_b": {
+      "pos": [
+        -0.0543,
+        0.0883,
+        0.7638
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "rack": [
+      -0.0911,
+      0.0672,
+      0.057
+    ],
+    "box": [
+      0.1015,
+      -0.1033
+    ]
+  },
+  "error": "DreamProtocolError: could not reach Dream Labs at https://api.dreamlabs.ai:443: nodename nor servname provided, or not known; check this computer's internet connection, or DREAM_GATEWAY_URL in ~/.dreamlabs/credentials",
+  "wall_s": 6.2,
+  "dir": "runs/2026-11-18-zero-shot/20261118-170011-rack_into_box-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T17:00:11-0800",
+  "median_call_s": null,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

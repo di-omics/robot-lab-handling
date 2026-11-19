@@ -1,0 +1,56 @@
+{
+  "task": "rack_carry",
+  "title": "Carry a full rack with both hands",
+  "prompt": "Pick up the tube rack with both hands and put it on the gray mat.",
+  "prompt_variant": "plain",
+  "seed": 102,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 51.5,
+  "calls": 22,
+  "est_cost_usd": 0.0308,
+  "stages": {
+    "rack_lifted_level": 13.9,
+    "rack_over_mat": 45.1,
+    "rack_on_mat": 49.5
+  },
+  "stages_reached": 3,
+  "stages_total": 3,
+  "progress": 1.0,
+  "success": true,
+  "success_at_s": 50.5,
+  "success_at_end": true,
+  "objects": {
+    "rack": {
+      "pos": [
+        -0.0172,
+        -0.0797,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "rack": [
+      -0.0068,
+      0.0817,
+      0.0518
+    ],
+    "mat": [
+      0.0,
+      -0.08
+    ]
+  },
+  "error": null,
+  "wall_s": 76.3,
+  "dir": "runs/2026-11-18-zero-shot/20261118-173440-rack_carry-plain-s102-dream-1-beta",
+  "started_at": "2026-11-18T17:34:40-0800",
+  "median_call_s": 0.682,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

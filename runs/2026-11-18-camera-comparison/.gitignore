@@ -1,0 +1,9 @@
+# Run-local sockets, observations and private session metadata stay on the run drive.
+*/obs-*/
+*/latest.json
+*/socket.txt
+*.mp4
+*.png
+*.jpg
+*.log
+*.err

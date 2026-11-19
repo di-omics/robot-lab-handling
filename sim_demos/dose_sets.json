@@ -1,0 +1,35 @@
+[
+  {
+    "episodes": 5,
+    "frames": 1042,
+    "robot_minutes": 1.74,
+    "bytes": 5938524,
+    "files": 24,
+    "validate_ok": true,
+    "validate_error": null,
+    "validate_notes": [],
+    "folder": "sim_demos/dataset_doses/first_005"
+  },
+  {
+    "episodes": 20,
+    "frames": 4123,
+    "robot_minutes": 6.87,
+    "bytes": 23559502,
+    "files": 84,
+    "validate_ok": true,
+    "validate_error": null,
+    "validate_notes": [],
+    "folder": "sim_demos/dataset_doses/first_020"
+  },
+  {
+    "episodes": 50,
+    "frames": 10049,
+    "robot_minutes": 16.75,
+    "bytes": 57519960,
+    "files": 204,
+    "validate_ok": true,
+    "validate_error": null,
+    "validate_notes": [],
+    "folder": "sim_demos/dataset"
+  }
+]

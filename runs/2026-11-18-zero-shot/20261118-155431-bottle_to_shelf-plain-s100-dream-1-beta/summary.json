@@ -1,0 +1,55 @@
+{
+  "task": "bottle_to_shelf",
+  "title": "Put a reagent bottle on the shelf",
+  "prompt": "Put the bottle on the gray platform.",
+  "prompt_variant": "plain",
+  "seed": 100,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 120.0,
+  "sim_s": 120.05,
+  "calls": 51,
+  "est_cost_usd": 0.0714,
+  "stages": {
+    "bottle_lifted": 43.0,
+    "bottle_over_shelf": 57.9,
+    "bottle_on_shelf": null
+  },
+  "stages_reached": 2,
+  "stages_total": 3,
+  "progress": 0.667,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "bottle": {
+      "pos": [
+        -15.7073,
+        1.8373,
+        0.0249
+      ],
+      "tilt_deg": 90.0
+    }
+  },
+  "layout": {
+    "bottle": [
+      -0.11,
+      0.0929
+    ],
+    "shelf": [
+      -0.2142,
+      -0.0691
+    ]
+  },
+  "error": null,
+  "wall_s": 102.4,
+  "dir": "runs/2026-11-18-zero-shot/20261118-155431-bottle_to_shelf-plain-s100-dream-1-beta",
+  "started_at": "2026-11-18T15:54:31-0800",
+  "median_call_s": 0.462,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

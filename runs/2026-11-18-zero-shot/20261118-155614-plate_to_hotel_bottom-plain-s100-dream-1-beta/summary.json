@@ -1,0 +1,56 @@
+{
+  "task": "plate_to_hotel_bottom",
+  "title": "Put a plate on the bottom shelf of the hotel",
+  "prompt": "Put the plate on the bottom shelf.",
+  "prompt_variant": "plain",
+  "seed": 100,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 180.0,
+  "sim_s": 180.0,
+  "calls": 75,
+  "est_cost_usd": 0.105,
+  "stages": {
+    "plate_lifted": 126.65,
+    "plate_lined_up_at_shelf": 57.9,
+    "plate_on_shelf": null
+  },
+  "stages_reached": 2,
+  "stages_total": 3,
+  "progress": 0.667,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "plate": {
+      "pos": [
+        0.1563,
+        -0.0742,
+        0.8238
+      ],
+      "tilt_deg": 90.0
+    }
+  },
+  "layout": {
+    "plate": [
+      0.1667,
+      0.0719,
+      1.537
+    ],
+    "hotel": [
+      0.16,
+      -0.16
+    ]
+  },
+  "error": null,
+  "wall_s": 221.1,
+  "dir": "runs/2026-11-18-zero-shot/20261118-155614-plate_to_hotel_bottom-plain-s100-dream-1-beta",
+  "started_at": "2026-11-18T15:56:15-0800",
+  "median_call_s": 0.546,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "method": "SHA-256 of the unmodified starting PNGs for each of the three cameras. The two language-model actors started from byte-identical images on each paired layout.",
+  "layouts": {
+    "100": {
+      "top": "706fbfd483c1a4cdcc5b95e4d3291f92933f8fdb8be9cac03f642b26e01f22d2",
+      "left": "365e54cc15086e9e0d17f0a70eae9e3e0ae7e127e70e94bfbaa5d7c32926ab41",
+      "right": "e06119f06e13f45bec064cc6725c74e70cfc2ea1c5acb8e67f5a31a730d27b2e"
+    },
+    "101": {
+      "top": "4058f698859cfeeb94374822563f017a670fd6ebd3e4156921c3eff9880eef76",
+      "left": "365e54cc15086e9e0d17f0a70eae9e3e0ae7e127e70e94bfbaa5d7c32926ab41",
+      "right": "e06119f06e13f45bec064cc6725c74e70cfc2ea1c5acb8e67f5a31a730d27b2e"
+    },
+    "102": {
+      "top": "a40a03c2ac4dcdfc488f163b02becc106fe27dea8bba04443bb3837cdcf66454",
+      "left": "365e54cc15086e9e0d17f0a70eae9e3e0ae7e127e70e94bfbaa5d7c32926ab41",
+      "right": "e06119f06e13f45bec064cc6725c74e70cfc2ea1c5acb8e67f5a31a730d27b2e"
+    }
+  }
+}

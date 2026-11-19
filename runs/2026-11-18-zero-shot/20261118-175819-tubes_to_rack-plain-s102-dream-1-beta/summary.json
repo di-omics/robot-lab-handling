@@ -1,0 +1,77 @@
+{
+  "task": "tubes_to_rack",
+  "title": "Rack the tubes",
+  "prompt": "Put the tubes in the rack.",
+  "prompt_variant": "plain",
+  "seed": 102,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 240.0,
+  "sim_s": 240.0,
+  "calls": 100,
+  "est_cost_usd": 0.14,
+  "stages": {
+    "tube_a_lifted": 128.55,
+    "tube_a_in_rack": null,
+    "tube_b_lifted": 33.6,
+    "tube_b_in_rack": 47.05
+  },
+  "stages_reached": 3,
+  "stages_total": 4,
+  "progress": 0.75,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "rack": {
+      "pos": [
+        -0.0082,
+        -0.0371,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_a": {
+      "pos": [
+        0.0189,
+        -0.0061,
+        0.8088
+      ],
+      "tilt_deg": 0.2
+    },
+    "tube_b": {
+      "pos": [
+        -0.0461,
+        -0.0214,
+        0.7638
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "rack": [
+      -0.0068,
+      -0.0383,
+      0.0648
+    ],
+    "tube_a": [
+      0.1539,
+      0.0955
+    ],
+    "tube_b": [
+      -0.1411,
+      0.1017
+    ]
+  },
+  "error": null,
+  "wall_s": 331.0,
+  "dir": "runs/2026-11-18-zero-shot/20261118-175819-tubes_to_rack-plain-s102-dream-1-beta",
+  "started_at": "2026-11-18T17:58:19-0800",
+  "median_call_s": 0.665,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

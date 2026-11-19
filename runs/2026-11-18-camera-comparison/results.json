@@ -1,0 +1,182 @@
+{
+  "task": "plate_to_tray",
+  "bench_code": "92c256eb309b",
+  "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+  "totals": {
+    "Codex": {
+      "passes": 2,
+      "takes": 3,
+      "interrupted": 0,
+      "exact_95": [
+        0.0942993240502461,
+        0.9915962413403874
+      ]
+    },
+    "Fable": {
+      "passes": null,
+      "takes": 0,
+      "interrupted": 3,
+      "exact_95": null
+    },
+    "Dream-1": {
+      "passes": 0,
+      "takes": 2,
+      "interrupted": 1,
+      "exact_95": [
+        0.0,
+        0.841886116991581
+      ]
+    }
+  },
+  "takes": [
+    {
+      "policy": "Codex",
+      "model": "gpt-6.2-astra",
+      "seed": 100,
+      "status": "complete",
+      "success": true,
+      "stages": {
+        "plate_lifted": 15.05,
+        "plate_over_tray": 18.5,
+        "plate_in_tray": 79.7
+      },
+      "sim_s": 81.7,
+      "pass_at_s": 80.7,
+      "wall_s": 1047.44,
+      "commands": 37,
+      "error_attempts": [],
+      "summary": "runs/2026-11-18-camera-comparison/codex-s100/summary.json",
+      "summary_sha256": "7458e922f042182db224042943dd9608f1ccc42529b4d86fd9647b1bbbfbd13b"
+    },
+    {
+      "policy": "Fable",
+      "model": "claude-fable-5-2",
+      "task": "plate_to_tray",
+      "seed": 100,
+      "bench_code": "92c256eb309b",
+      "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+      "status": "interrupted",
+      "commands": 1,
+      "sim_s": 3.0,
+      "success": null,
+      "reason": "Operator requested an end to Claude use before a terminal score."
+    },
+    {
+      "policy": "Dream-1",
+      "model": "dreamlabs/dream-1-beta",
+      "seed": 100,
+      "status": "complete",
+      "success": false,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_tray": null,
+        "plate_in_tray": null
+      },
+      "sim_s": 150.0,
+      "pass_at_s": null,
+      "wall_s": 177.4,
+      "calls": 63,
+      "estimated_usd": 0.0882,
+      "error_attempts": [],
+      "summary": "runs/2026-11-18-zero-shot/20261118-160647-plate_to_tray-plain-s100-dream-1-beta/summary.json",
+      "summary_sha256": "a31c838fc302970dd34a135a4c4f4c26d6db0cac540ef8b3dc8fbf20e3ca57b8"
+    },
+    {
+      "policy": "Codex",
+      "model": "gpt-6.2-astra",
+      "seed": 101,
+      "status": "complete",
+      "success": true,
+      "stages": {
+        "plate_lifted": 16.15,
+        "plate_over_tray": 19.55,
+        "plate_in_tray": 69.9
+      },
+      "sim_s": 71.9,
+      "pass_at_s": 70.9,
+      "wall_s": 1009.91,
+      "commands": 40,
+      "error_attempts": [],
+      "summary": "runs/2026-11-18-camera-comparison/codex-s101/summary.json",
+      "summary_sha256": "418d7479b16328b0411e663c226db3ce967add500e72d6b863c36f530137f21b"
+    },
+    {
+      "policy": "Fable",
+      "model": "claude-fable-5-2",
+      "task": "plate_to_tray",
+      "seed": 101,
+      "bench_code": "92c256eb309b",
+      "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+      "status": "interrupted",
+      "commands": 1,
+      "sim_s": 3.0,
+      "success": null,
+      "reason": "Operator requested an end to Claude use before a terminal score."
+    },
+    {
+      "policy": "Dream-1",
+      "model": "dreamlabs/dream-1-beta",
+      "seed": 101,
+      "status": "interrupted",
+      "sim_s": 0.0,
+      "success": null,
+      "error_attempts": [
+        "20261118-165954-plate_to_tray-plain-s101-dream-1-beta"
+      ],
+      "calls": 0,
+      "reason": "Dream service or infrastructure error. No completed take available."
+    },
+    {
+      "policy": "Codex",
+      "model": "gpt-6.2-astra",
+      "seed": 102,
+      "status": "complete",
+      "success": false,
+      "stages": {
+        "plate_lifted": 21.7,
+        "plate_over_tray": 24.15,
+        "plate_in_tray": null
+      },
+      "sim_s": 150.0,
+      "pass_at_s": null,
+      "wall_s": 415.2,
+      "commands": 21,
+      "error_attempts": [],
+      "summary": "runs/2026-11-18-camera-comparison/codex-s102/summary.json",
+      "summary_sha256": "d7f922403d7c66e9fa898a61e3d4784bad504e3ce928559d1bc71b271be4d91a"
+    },
+    {
+      "policy": "Fable",
+      "model": "claude-fable-5-2",
+      "task": "plate_to_tray",
+      "seed": 102,
+      "bench_code": "92c256eb309b",
+      "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+      "status": "interrupted",
+      "commands": 2,
+      "sim_s": 5.5,
+      "success": null,
+      "reason": "Operator requested an end to Claude use before a terminal score."
+    },
+    {
+      "policy": "Dream-1",
+      "model": "dreamlabs/dream-1-beta",
+      "seed": 102,
+      "status": "complete",
+      "success": false,
+      "stages": {
+        "plate_lifted": 43.0,
+        "plate_over_tray": null,
+        "plate_in_tray": null
+      },
+      "sim_s": 150.0,
+      "pass_at_s": null,
+      "wall_s": 168.1,
+      "calls": 63,
+      "estimated_usd": 0.0882,
+      "error_attempts": [],
+      "summary": "runs/2026-11-18-zero-shot/20261118-173151-plate_to_tray-plain-s102-dream-1-beta/summary.json",
+      "summary_sha256": "0f4595e3a8a551496ed2fc937425cf580dc9a4b1055a6d970a33c4dc1ec1dab8"
+    }
+  ]
+}

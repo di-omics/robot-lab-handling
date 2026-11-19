@@ -1,0 +1,77 @@
+{
+  "task": "tubes_to_rack",
+  "title": "Rack the tubes",
+  "prompt": "Put the tubes in the rack.",
+  "prompt_variant": "plain",
+  "seed": 100,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 240.0,
+  "sim_s": 184.8,
+  "calls": 77,
+  "est_cost_usd": 0.1078,
+  "stages": {
+    "tube_a_lifted": null,
+    "tube_a_in_rack": null,
+    "tube_b_lifted": 52.8,
+    "tube_b_in_rack": null
+  },
+  "stages_reached": 1,
+  "stages_total": 4,
+  "progress": 0.25,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "rack": {
+      "pos": [
+        0.0067,
+        -0.0381,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_a": {
+      "pos": [
+        0.1463,
+        0.1042,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_b": {
+      "pos": [
+        -0.0987,
+        0.0535,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "rack": [
+      0.0067,
+      -0.0381,
+      -0.0422
+    ],
+    "tube_a": [
+      0.1463,
+      0.1042
+    ],
+    "tube_b": [
+      -0.1371,
+      0.0987
+    ]
+  },
+  "error": "DreamProtocolError: could not reach Dream Labs at https://api.dreamlabs.ai:443: nodename nor servname provided, or not known; check this computer's internet connection, or DREAM_GATEWAY_URL in ~/.dreamlabs/credentials",
+  "wall_s": 189.8,
+  "dir": "runs/2026-11-18-zero-shot/20261118-163223-tubes_to_rack-plain-s100-dream-1-beta",
+  "started_at": "2026-11-18T16:32:23-0800",
+  "median_call_s": 0.541,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

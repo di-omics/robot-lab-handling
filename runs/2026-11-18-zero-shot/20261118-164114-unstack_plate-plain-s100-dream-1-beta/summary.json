@@ -1,0 +1,73 @@
+{
+  "task": "unstack_plate",
+  "title": "Take the top plate off a stack",
+  "prompt": "Take the top plate off the stack and put it on the black tray.",
+  "prompt_variant": "plain",
+  "seed": 100,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 0.0,
+  "calls": 0,
+  "est_cost_usd": 0.0,
+  "stages": {
+    "top_plate_lifted_alone": null,
+    "plate_over_tray": null,
+    "plate_in_tray": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "plate_1": {
+      "pos": [
+        0.1567,
+        0.0719,
+        0.7598
+      ],
+      "tilt_deg": 0.0
+    },
+    "plate_2": {
+      "pos": [
+        0.1567,
+        0.0719,
+        0.774
+      ],
+      "tilt_deg": 0.0
+    },
+    "plate_3": {
+      "pos": [
+        0.1567,
+        0.0719,
+        0.7883
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "stack": [
+      0.1567,
+      0.0719,
+      -0.0422
+    ],
+    "tray": [
+      -0.0073,
+      -0.0624,
+      0.0
+    ]
+  },
+  "error": "DreamProtocolError: could not reach Dream Labs at https://api.dreamlabs.ai:443: nodename nor servname provided, or not known; check this computer's internet connection, or DREAM_GATEWAY_URL in ~/.dreamlabs/credentials",
+  "wall_s": 7.1,
+  "dir": "runs/2026-11-18-zero-shot/20261118-164114-unstack_plate-plain-s100-dream-1-beta",
+  "started_at": "2026-11-18T16:41:15-0800",
+  "median_call_s": null,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

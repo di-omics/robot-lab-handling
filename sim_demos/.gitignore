@@ -1,0 +1,5 @@
+# The recorded dataset (about 60 MB of video and parquet) stays out of git, like the take videos in runs/.
+# Rebuild it with: python -m sim_demos.record --keep 50
+dataset/
+__pycache__/
+dataset_doses/

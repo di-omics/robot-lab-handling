@@ -1,0 +1,73 @@
+{
+  "task": "unstack_plate",
+  "title": "Take the top plate off a stack",
+  "prompt": "Take the top plate off the stack and put it on the black tray.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 150.0,
+  "calls": 63,
+  "est_cost_usd": 0.0882,
+  "stages": {
+    "top_plate_lifted_alone": 144.9,
+    "plate_over_tray": null,
+    "plate_in_tray": null
+  },
+  "stages_reached": 1,
+  "stages_total": 3,
+  "progress": 0.333,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "plate_1": {
+      "pos": [
+        0.159,
+        0.068,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "plate_2": {
+      "pos": [
+        0.1588,
+        0.0683,
+        0.7742
+      ],
+      "tilt_deg": 0.0
+    },
+    "plate_3": {
+      "pos": [
+        0.1474,
+        -0.0377,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "stack": [
+      0.1589,
+      0.0672,
+      0.057
+    ],
+    "tray": [
+      0.0015,
+      -0.0733,
+      0.0
+    ]
+  },
+  "error": null,
+  "wall_s": 230.7,
+  "dir": "runs/2026-11-18-zero-shot/20261118-171531-unstack_plate-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T17:15:31-0800",
+  "median_call_s": 0.686,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

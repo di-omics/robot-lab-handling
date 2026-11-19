@@ -1,0 +1,56 @@
+{
+  "attempts": 50,
+  "kept": 50,
+  "dropped": 0,
+  "seeds": [
+    1000,
+    1049
+  ],
+  "frames": 10049,
+  "fps": 10,
+  "robot_minutes": 16.75,
+  "episode_s": {
+    "min": 17.9,
+    "median": 19.9,
+    "max": 22.6
+  },
+  "success_at_s": {
+    "min": 14.9,
+    "max": 18.55
+  },
+  "files": 204,
+  "bytes": 57519960,
+  "record_wall_min": 18.9,
+  "plate_off_tray_centre_mm_max": [
+    0.7,
+    0.8
+  ],
+  "plate_off_hand_centre_mm_max": [
+    0.2,
+    0.2
+  ],
+  "carry_trim_mm_max": [
+    0.7,
+    0.7
+  ],
+  "expert_speed_factor": [
+    0.852,
+    1.147
+  ],
+  "peak_joint_speed_rad_s": [
+    0.77,
+    2.2,
+    2.11,
+    1.42,
+    0.0,
+    0.8
+  ],
+  "peak_hand_speed_m_s": {
+    "median": 0.338,
+    "max": 0.399
+  },
+  "gripper_opening_while_holding": {
+    "min": 0.912,
+    "max": 0.912
+  }
+}

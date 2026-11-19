@@ -1,0 +1,57 @@
+{
+  "task": "plate_to_tray",
+  "title": "Load a plate onto the reader tray",
+  "prompt": "Put the plate on the black tray.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 0.0,
+  "calls": 0,
+  "est_cost_usd": 0.0,
+  "stages": {
+    "plate_lifted": null,
+    "plate_over_tray": null,
+    "plate_in_tray": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "plate": {
+      "pos": [
+        0.1506,
+        0.0666,
+        0.76
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "plate": [
+      0.1506,
+      0.0666,
+      0.0684
+    ],
+    "tray": [
+      0.0015,
+      -0.0733,
+      0.0
+    ]
+  },
+  "error": "DreamProtocolError: could not reach Dream Labs at https://api.dreamlabs.ai:443: nodename nor servname provided, or not known; check this computer's internet connection, or DREAM_GATEWAY_URL in ~/.dreamlabs/credentials",
+  "wall_s": 7.3,
+  "dir": "runs/2026-11-18-zero-shot/20261118-165954-plate_to_tray-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T16:59:54-0800",
+  "median_call_s": null,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

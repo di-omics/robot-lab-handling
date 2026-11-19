@@ -1,0 +1,65 @@
+{
+  "task": "stack_plates",
+  "title": "Stack two assay plates",
+  "prompt": "Stack the two plates.",
+  "prompt_variant": "plain",
+  "seed": 102,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 150.0,
+  "calls": 63,
+  "est_cost_usd": 0.0882,
+  "stages": {
+    "a_plate_lifted": null,
+    "plate_over_the_other": null,
+    "plates_stacked": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "plate_a": {
+      "pos": [
+        -0.0692,
+        0.0292,
+        0.7594
+      ],
+      "tilt_deg": 0.4
+    },
+    "plate_b": {
+      "pos": [
+        0.0354,
+        -0.0501,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "plate_a": [
+      -0.1282,
+      0.0721,
+      0.0777
+    ],
+    "plate_b": [
+      0.0351,
+      -0.0356,
+      -0.0087
+    ]
+  },
+  "error": null,
+  "wall_s": 203.1,
+  "dir": "runs/2026-11-18-zero-shot/20261118-174859-stack_plates-plain-s102-dream-1-beta",
+  "started_at": "2026-11-18T17:48:59-0800",
+  "median_call_s": 0.716,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

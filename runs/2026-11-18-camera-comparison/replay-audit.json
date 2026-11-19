@@ -1,0 +1,59 @@
+[
+  {
+    "model": "gpt-6.2-astra",
+    "seed": 100,
+    "matched": true,
+    "fields_checked": [
+      "status",
+      "bench_code",
+      "adapter_sha256",
+      "sim_s",
+      "actions",
+      "success",
+      "success_at_s",
+      "success_at_end",
+      "stages",
+      "stages_reached",
+      "stages_total"
+    ],
+    "differences": {}
+  },
+  {
+    "model": "gpt-6.2-astra",
+    "seed": 101,
+    "matched": true,
+    "fields_checked": [
+      "status",
+      "bench_code",
+      "adapter_sha256",
+      "sim_s",
+      "actions",
+      "success",
+      "success_at_s",
+      "success_at_end",
+      "stages",
+      "stages_reached",
+      "stages_total"
+    ],
+    "differences": {}
+  },
+  {
+    "model": "gpt-6.2-astra",
+    "seed": 102,
+    "matched": true,
+    "fields_checked": [
+      "status",
+      "bench_code",
+      "adapter_sha256",
+      "sim_s",
+      "actions",
+      "success",
+      "success_at_s",
+      "success_at_end",
+      "stages",
+      "stages_reached",
+      "stages_total"
+    ],
+    "differences": {}
+  }
+]

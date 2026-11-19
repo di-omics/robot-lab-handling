@@ -1,0 +1,72 @@
+{
+  "task": "sort_by_cap",
+  "title": "Sort tubes by cap colour",
+  "prompt": "Put the red tube in the left tray and the blue tube in the right tray.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 240.0,
+  "sim_s": 0.0,
+  "calls": 0,
+  "est_cost_usd": 0.0,
+  "stages": {
+    "red_lifted": null,
+    "red_in_left_tray": null,
+    "blue_lifted": null,
+    "blue_in_right_tray": null
+  },
+  "stages_reached": 0,
+  "stages_total": 4,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "tube_red": {
+      "pos": [
+        -0.0443,
+        0.1118,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "tube_blue": {
+      "pos": [
+        0.0589,
+        0.1072,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "tube_red": [
+      -0.0443,
+      0.1118
+    ],
+    "tube_blue": [
+      0.0589,
+      0.1072
+    ],
+    "tray_left": [
+      0.2,
+      -0.1
+    ],
+    "tray_right": [
+      -0.2,
+      -0.1
+    ]
+  },
+  "error": "DreamProtocolError: could not reach Dream Labs at https://api.dreamlabs.ai:443: nodename nor servname provided, or not known; check this computer's internet connection, or DREAM_GATEWAY_URL in ~/.dreamlabs/credentials",
+  "wall_s": 6.3,
+  "dir": "runs/2026-11-18-zero-shot/20261118-170026-sort_by_cap-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T17:00:26-0800",
+  "median_call_s": null,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}

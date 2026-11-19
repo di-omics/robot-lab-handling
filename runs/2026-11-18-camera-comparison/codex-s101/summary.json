@@ -1,0 +1,26 @@
+{
+  "actor": "gpt-6.2-astra",
+  "task": "plate_to_tray",
+  "seed": 101,
+  "prompt": "Put the plate on the black tray.",
+  "seconds_allowed": 150.0,
+  "bench_code": "92c256eb309b",
+  "adapter_sha256": "1dac9a0810eaf851f9112fe167fb8eb9f513c109243e967f8a83bac64507fb74",
+  "mujoco": "4.0.1",
+  "dreamlabs": "1.0.42",
+  "status": "complete",
+  "sim_s": 71.9,
+  "actions": 40,
+  "wall_s": 1009.91,
+  "stages": {
+    "plate_lifted": 16.15,
+    "plate_over_tray": 19.55,
+    "plate_in_tray": 69.9
+  },
+  "stages_reached": 3,
+  "stages_total": 3,
+  "progress": 1.0,
+  "success": true,
+  "success_at_s": 70.9,
+  "success_at_end": true
+}

@@ -1,0 +1,56 @@
+{
+  "task": "rack_carry",
+  "title": "Carry a full rack with both hands",
+  "prompt": "Pick up the tube rack with both hands and put it on the gray mat.",
+  "prompt_variant": "plain",
+  "seed": 101,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 0.0,
+  "calls": 0,
+  "est_cost_usd": 0.0,
+  "stages": {
+    "rack_lifted_level": null,
+    "rack_over_mat": null,
+    "rack_on_mat": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "rack": {
+      "pos": [
+        0.0089,
+        0.0772,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "rack": [
+      0.0089,
+      0.0772,
+      0.0456
+    ],
+    "mat": [
+      0.0,
+      -0.08
+    ]
+  },
+  "error": "DreamProtocolError: could not reach Dream Labs at https://api.dreamlabs.ai:443: nodename nor servname provided, or not known; check this computer's internet connection, or DREAM_GATEWAY_URL in ~/.dreamlabs/credentials",
+  "wall_s": 7.4,
+  "dir": "runs/2026-11-18-zero-shot/20261118-170003-rack_carry-plain-s101-dream-1-beta",
+  "started_at": "2026-11-18T17:00:03-0800",
+  "median_call_s": null,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1"
+  }
+}
