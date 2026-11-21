@@ -1,8 +1,9 @@
 # robot-lab-handling
 
-**Status: simulation only.** The first 15 everyday lab handling tasks are built and their scoring is checked by scripts.
-The set is meant to grow.
-Dream-1 ran the joint-control baseline. A separate paired pilot evaluated Codex on three plate-placement layouts.
+**Status: simulation only.** 19 tasks so far: the first 15 everyday lab handling tasks, and 4 instrument tending
+tasks around a plate dispenser. Their scoring is checked by scripts. The set is meant to grow.
+Dream-1 ran the joint-control baseline on the first 15. A separate paired pilot evaluated Codex on 3
+plate-placement layouts.
 The recorded scores and the interrupted Fable attempts are listed below. [PLAN.md](PLAN.md) says what comes next.
 
 ![3 zero-shot passes in simulation](media/zero_shot_passes.gif)
@@ -35,6 +36,8 @@ position or into a hotel, stacking and unstacking plates, binning used tubes.
 | Read the results | `runs/` ([what each run is](runs/README.md)) | |
 | Drive the arms from pictures with a language model | `camera_env/` ([how](camera_env/README.md)) | `python -m camera_env --listen --task plate_to_tray --seed 0 --actor example --out /tmp/yam-practice-take` |
 | Record scripted demonstrations | `sim_demos/` ([notes](sim_demos/NOTES.md)) | `python -m sim_demos.record --keep 50` |
+| Tend an instrument: plate dispenser and cell bottle | `tending/` ([tasks and rules](tending/README.md)) | `python -m tending stills --task plate_in_with_swirl --seed 0` |
+| Run a model on the tending tasks and replay the takes | `scripts/tending_run.py`, `scripts/tending_replay.py` | `python scripts/tending_replay.py runs/2026-11-19-tending-first-look` |
 | Know the rules a scored run followed | `PROTOCOL.md`, `DEVIATIONS.md` | |
 | Know what comes next | `PLAN.md` | |
 
@@ -67,6 +70,30 @@ These 15 are the first set, not the scope. More tasks are planned: see [PLAN.md]
 Every task has 3 wordings (plain, terse and precise) and one control instruction that names things that are
 not on the bench, to measure how much the phrasing matters and whether the model listens at all.
 Each take moves the labware by a seeded jitter of about 1 cm, so 5 takes are 5 slightly different benches.
+
+## Instrument tending
+
+![The left arm loads the plate while the right arm swirls the cell bottle](media/tending_two_arms.gif)
+
+*A scripted run in simulation, sped up 2x. It shows the task can be done; it is not a model.*
+
+Tasks 16 to 19 put an instrument on the table: a plate washer-dispenser set up as a cell seeder, drawn from a
+public operator's manual, with its plate carrier out and a cell bottle beside it. They live in their own package,
+[tending/](tending/README.md), with the same robot, cameras and scoring. No liquid is simulated.
+
+| # | Task | The robot is told | Passes when | Time limit |
+|---|---|---|---|---|
+| 16 | `dispenser_plate_in` | Put the plate on the dispenser's plate carrier. | The plate sits flat in the carrier pocket, A1 at the back left, hands out of the carrier's path, after a level lift. A dropped plate does not count. | 150 s |
+| 17 | `dispenser_plate_out` | Take the plate off the dispenser's plate carrier and put it on the gray mat. | The plate lies flat and wholly on the mat and the carrier is empty, after a level lift. A plate tipped out and pushed does not count. | 150 s |
+| 18 | `cell_bottle_swirl` | Swirl the cell bottle to keep the cells mixed, then put it back. | The bottle was lifted and swirled upright for 3 turns or more, then set back on its spot. Tipping it past 30 degrees fails. | 90 s |
+| 19 | `plate_in_with_swirl` | Load the plate onto the dispenser's plate carrier while your other hand keeps the cell bottle swirling. | Everything task 16 asks, with the bottle swirling for at least half of the time and half of the plate's travel to the nest, then set back on its spot. | 150 s |
+
+- **Held-out run: registered, not yet run.** Dream-1, zero-shot, 3 layouts per task (100 to 102), under
+  [this protocol](runs/2026-11-21-tending-zero-shot/PROTOCOL.md), committed before the first take.
+- **First look: 0 of 4.** Dream-1 on practice layout 0, 1 completed take per task, no stage reached. The takes can
+  be replayed offline: [runs/2026-11-19-tending-first-look](runs/2026-11-19-tending-first-look/README.md).
+- **Scripted reference: passes all 4 tasks** on practice layouts 0 to 4 and on the 3 held-out layouts. It reads
+  object positions from the simulator, so it shows the tasks can be done by this robot; it is not a model.
 
 ## Scoring
 

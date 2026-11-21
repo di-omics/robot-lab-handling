@@ -18,3 +18,7 @@ runs/**/*.mp4
 *.egg-info/
 build/
 dist/
+
+# a run in progress
+runs/**/unfinished/
+runs/**/.lock

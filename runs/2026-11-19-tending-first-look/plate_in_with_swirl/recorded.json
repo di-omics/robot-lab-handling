@@ -1,0 +1,73 @@
+{
+  "task": "plate_in_with_swirl",
+  "prompt": "Load the plate onto the dispenser's plate carrier while your other hand keeps the cell bottle swirling.",
+  "prompt_variant": "plain",
+  "seed": 0,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 150.0,
+  "calls": 63,
+  "est_cost_usd": 0.0882,
+  "stages": {
+    "plate_lifted": null,
+    "plate_over_carrier": null,
+    "plate_seated": null,
+    "bottle_swirled": null,
+    "bottle_home": null
+  },
+  "stages_reached": 0,
+  "stages_total": 5,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "objects": {
+    "plate": {
+      "pos": [
+        0.1337,
+        0.0919,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "bottle": {
+      "pos": [
+        -0.2104,
+        -0.1572,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "dispenser": [
+      0.1741,
+      -0.0796
+    ],
+    "plate": [
+      0.1337,
+      0.0919,
+      0.032
+    ],
+    "mat": [
+      0.1262,
+      0.0853
+    ],
+    "bottle": [
+      -0.2154,
+      -0.1491
+    ]
+  },
+  "error": null,
+  "started_at": "2026-11-19T20:24:39-0800",
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1",
+    "tending": "ba4601eda5dc"
+  },
+  "actions_sha256": "989c51695ed2a032df865f07be1b2d5348c1aa234042887c21a5d2f0785a36e8",
+  "steps": 3033,
+  "priming_steps": 33
+}

@@ -1,0 +1,71 @@
+{
+  "task": "dispenser_plate_out",
+  "prompt": "Take the plate off the dispenser's plate carrier and put it on the gray mat.",
+  "prompt_variant": "plain",
+  "seed": 0,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 150.0,
+  "sim_s": 150.0,
+  "calls": 63,
+  "est_cost_usd": 0.0882,
+  "stages": {
+    "plate_lifted": null,
+    "plate_over_mat": null,
+    "plate_on_mat": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "objects": {
+    "plate": {
+      "pos": [
+        0.177,
+        -0.0496,
+        0.8237
+      ],
+      "tilt_deg": 5.4
+    },
+    "bottle": {
+      "pos": [
+        -0.2154,
+        -0.1491,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "dispenser": [
+      0.1741,
+      -0.0796
+    ],
+    "plate": [
+      0.1747,
+      -0.0788,
+      0.0011
+    ],
+    "mat": [
+      0.1262,
+      0.0853
+    ],
+    "bottle": [
+      -0.2154,
+      -0.1491
+    ]
+  },
+  "error": null,
+  "started_at": "2026-11-19T20:32:43-0800",
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1",
+    "tending": "ba4601eda5dc"
+  },
+  "actions_sha256": "7cce35e9b63638ef853d32a31576399f665705f3ec7fde5777aee5a1896e5a43",
+  "steps": 3033,
+  "priming_steps": 33
+}

@@ -22,6 +22,7 @@ dependencies = [
 [project.scripts]
 labbench = "labbench.__main__:main"
 camera-env = "camera_env.__main__:main"
+tending = "tending.__main__:main"
 
 [tool.setuptools]
-packages = ["labbench", "camera_env", "sim_demos"]
+packages = ["labbench", "camera_env", "sim_demos", "tending"]

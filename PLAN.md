@@ -39,6 +39,8 @@ it work when taught, how much teaching, and does that hold on a real bench.
   ([results](runs/2026-11-18-camera-comparison/RESULTS.md)). The 2 act through different controls, so
   this is not a ranking.
 - Nothing has been uploaded for training.
+- 2026-11-21: 4 instrument tending tasks are added (a plate dispenser and its cell bottle, tasks 16
+  to 19). A first look with Dream-1 on 1 practice layout gave 0 of 4. A held-out run is registered.
 
 ## Steps, in order
 
@@ -88,9 +90,12 @@ skipped quietly.
      to the deck of a liquid handler.
    - Gate: for each chore, the gap between the simulated and the real pass count. A chore where
      the simulator is wrong is reported as a finding about the simulator.
-7. **More chores.** The set grows past 15. Next in line: uncapping a tube, lids and seals, opening
-   plate sleeves and bags, tip boxes onto a deck, and liquid. A new chore joins the way the first
-   15 did: one sentence, a scored end state, and an oracle and traps that test its scoring.
+7. **More chores.** The set grows past 15. Started: 4 instrument tending tasks, in `tending/`:
+   loading and unloading a plate dispenser, swirling its cell bottle, and doing both at once with
+   2 arms. Next instruments: a plate reader drawer and a liquid handler deck position. Next kinds
+   of handling: uncapping a tube, lids and seals, opening plate sleeves and bags, tip boxes onto a
+   deck, and liquid. A new chore joins the way the first 15 did: one sentence, a scored end state,
+   and an oracle and traps that test its scoring.
 
 Steps 1 to 5 need no robot. This plan assumes no hardware: step 6 is taken when a station is
 available, and until then step 5 is the stand-in.

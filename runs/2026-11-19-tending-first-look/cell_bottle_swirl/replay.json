@@ -1,0 +1,56 @@
+{
+  "task": "cell_bottle_swirl",
+  "seed": 0,
+  "stages": {
+    "bottle_lifted": null,
+    "bottle_swirled": null,
+    "bottle_home": null
+  },
+  "success": false,
+  "success_at_s": null,
+  "objects": {
+    "bottle": {
+      "pos": [
+        -0.2154,
+        -0.1497,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "plate": {
+      "pos": [
+        0.1337,
+        0.0919,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "motion": {
+    "bottle": {
+      "moved_max_xy_m": 0.0006,
+      "rose_max_m": 0.0004,
+      "tilt_max_deg": 1.0,
+      "touched_steps": 13
+    },
+    "plate": {
+      "moved_max_xy_m": 0.0,
+      "rose_max_m": 0.0,
+      "tilt_max_deg": 0.0,
+      "touched_steps": 0,
+      "low_corner_rose_max_m": 0.0,
+      "low_corner_rose_max_m_under_10_deg": 0.0
+    }
+  },
+  "steps": 1834,
+  "actions_sha256": "603591767a51f26d0a139168f9f34a9cf6ae0831ac553bee094abb72e59b3ae9",
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1",
+    "tending": "ba4601eda5dc"
+  },
+  "status": "agrees",
+  "problems": []
+}
