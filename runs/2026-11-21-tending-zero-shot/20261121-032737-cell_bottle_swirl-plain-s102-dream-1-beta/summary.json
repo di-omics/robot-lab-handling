@@ -1,0 +1,73 @@
+{
+  "task": "cell_bottle_swirl",
+  "title": "Swirl the cell bottle",
+  "prompt": "Swirl the cell bottle to keep the cells mixed, then put it back.",
+  "prompt_variant": "plain",
+  "seed": 102,
+  "model": "dreamlabs/dream-1-beta",
+  "policy": "dream",
+  "seconds_allowed": 90.0,
+  "sim_s": 90.05,
+  "calls": 38,
+  "est_cost_usd": 0.0532,
+  "stages": {
+    "bottle_lifted": null,
+    "bottle_swirled": null,
+    "bottle_home": null
+  },
+  "stages_reached": 0,
+  "stages_total": 3,
+  "progress": 0.0,
+  "success": false,
+  "success_at_s": null,
+  "success_at_end": false,
+  "objects": {
+    "bottle": {
+      "pos": [
+        -0.2187,
+        -0.1401,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "plate": {
+      "pos": [
+        0.1542,
+        0.0904,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "layout": {
+    "dispenser": [
+      0.1598,
+      -0.0733
+    ],
+    "plate": [
+      0.1542,
+      0.0904,
+      0.1174
+    ],
+    "mat": [
+      0.1497,
+      0.0909
+    ],
+    "bottle": [
+      -0.2187,
+      -0.1401
+    ]
+  },
+  "error": null,
+  "wall_s": 94.4,
+  "dir": "runs/2026-11-21-tending-zero-shot/20261121-032737-cell_bottle_swirl-plain-s102-dream-1-beta",
+  "started_at": "2026-11-21T03:27:37-0800",
+  "median_call_s": 0.724,
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1",
+    "tending": "ba4601eda5dc"
+  }
+}

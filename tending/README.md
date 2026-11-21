@@ -38,8 +38,12 @@ moves up to 10 mm each way. Layouts 100 to 104 are kept for scored runs; the fir
 
 ## Results so far
 
-- **Held-out run: registered, not yet run.** Dream-1, zero-shot, 3 layouts per task (100 to 102), under
-  [this protocol](../runs/2026-11-21-tending-zero-shot/PROTOCOL.md), committed before the first take.
+- **Held-out run: 0 of 12.** Dream-1, zero-shot, 3 layouts per task (100 to 102), under
+  [this protocol](../runs/2026-11-21-tending-zero-shot/PROTOCOL.md), committed before the first take. No task passed
+  on any layout ([what happened](../runs/2026-11-21-tending-zero-shot/README.md)). In 1 take the robot tipped the
+  plate out of the carrier by 1 end, carried it tilted 27 to 46 degrees, and let go with its low end on the mat,
+  so it fell flat there. The rule asks for a level lift and a level pass over the mat, as a filled plate needs, so
+  it is not a pass. In 7 of the 12 takes the robot touched neither the plate nor the bottle.
 - **First look: 0 of 4.** Dream-1 on practice layout 0, 1 completed take per task, no stage reached. The takes can
   be replayed offline: [runs/2026-11-19-tending-first-look](../runs/2026-11-19-tending-first-look/README.md).
 - **Scripted reference: passes all 4 tasks** on practice layouts 0 to 4 and on the 3 held-out layouts. It reads
@@ -196,5 +200,7 @@ Sources:
 - A likeness, not a copy: sizes read off the manual's photos are estimates; parts it gives no number for are assumed.
 - Which hand does what is not scored. Task 19's together rule is judged only until the plate is first seated.
 - The swirl is measured at the centre of the bottle's base: rocking it about a still base is not a swirl.
+- The drop rule follows the plate's lowest corner: a plate let go standing on 1 edge falls flat without counting as
+  a drop. The level stages catch that case.
 - The swirl limits are wide on purpose: a tilt up to 20 degrees and circles up to 120 mm from where each hold began
   count, so a bottle picked up again elsewhere can be swirled there. It must still end on its spot.

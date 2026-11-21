@@ -40,7 +40,8 @@ it work when taught, how much teaching, and does that hold on a real bench.
   this is not a ranking.
 - Nothing has been uploaded for training.
 - 2026-11-21: 4 instrument tending tasks are added (a plate dispenser and its cell bottle, tasks 16
-  to 19). A first look with Dream-1 on 1 practice layout gave 0 of 4. A held-out run is registered.
+  to 19). Dream-1 zero-shot: 0 of 4 in a first look on 1 practice layout, then 0 of 12 in the
+  held-out run on 3 layouts.
 
 ## Steps, in order
 

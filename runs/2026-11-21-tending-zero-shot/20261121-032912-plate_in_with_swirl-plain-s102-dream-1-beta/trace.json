@@ -1,0 +1,32 @@
+{
+  "steps": 3033,
+  "priming_steps": 33,
+  "step_s": 0.05,
+  "dtype": "<f8",
+  "columns": [
+    "left0",
+    "left1",
+    "left2",
+    "left3",
+    "left4",
+    "left5",
+    "left6",
+    "right0",
+    "right1",
+    "right2",
+    "right3",
+    "right4",
+    "right5",
+    "right6"
+  ],
+  "actions_sha256": "a150156568a07cc848dca1014f1e204d061e23178fedd0f54460c80aa0e57483",
+  "summary": "summary.json",
+  "summary_sha256": "eabb914deb5f843b9a1fdf318a402840f61dc5ccd2b6e6a9891e420f28633319",
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1",
+    "tending": "ba4601eda5dc"
+  }
+}

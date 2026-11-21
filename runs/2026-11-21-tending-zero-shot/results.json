@@ -1,0 +1,972 @@
+{
+  "rows": [
+    {
+      "task": "dispenser_plate_in",
+      "prompt_variant": "plain",
+      "model": "dreamlabs/dream-1-beta",
+      "prompt": "Put the plate on the dispenser's plate carrier.",
+      "takes": 3,
+      "passes": 0,
+      "range_95": [
+        0.0,
+        0.708
+      ],
+      "mean_progress": 0.0,
+      "median_pass_s": null,
+      "calls": 189,
+      "est_cost_usd": 0.265,
+      "seeds": [
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "task": "dispenser_plate_out",
+      "prompt_variant": "plain",
+      "model": "dreamlabs/dream-1-beta",
+      "prompt": "Take the plate off the dispenser's plate carrier and put it on the gray mat.",
+      "takes": 3,
+      "passes": 0,
+      "range_95": [
+        0.0,
+        0.708
+      ],
+      "mean_progress": 0.111,
+      "median_pass_s": null,
+      "calls": 189,
+      "est_cost_usd": 0.265,
+      "seeds": [
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "task": "cell_bottle_swirl",
+      "prompt_variant": "plain",
+      "model": "dreamlabs/dream-1-beta",
+      "prompt": "Swirl the cell bottle to keep the cells mixed, then put it back.",
+      "takes": 3,
+      "passes": 0,
+      "range_95": [
+        0.0,
+        0.708
+      ],
+      "mean_progress": 0.0,
+      "median_pass_s": null,
+      "calls": 114,
+      "est_cost_usd": 0.16,
+      "seeds": [
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "task": "plate_in_with_swirl",
+      "prompt_variant": "plain",
+      "model": "dreamlabs/dream-1-beta",
+      "prompt": "Load the plate onto the dispenser's plate carrier while your other hand keeps the cell bottle swirling.",
+      "takes": 3,
+      "passes": 0,
+      "range_95": [
+        0.0,
+        0.708
+      ],
+      "mean_progress": 0.0,
+      "median_pass_s": null,
+      "calls": 189,
+      "est_cost_usd": 0.265,
+      "seeds": [
+        100,
+        101,
+        102
+      ]
+    }
+  ],
+  "takes": [
+    {
+      "task": "dispenser_plate_in",
+      "title": "Load a plate onto the dispenser carrier",
+      "prompt": "Put the plate on the dispenser's plate carrier.",
+      "prompt_variant": "plain",
+      "seed": 100,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_carrier": null,
+        "plate_seated": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.145,
+            0.0874,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2118,
+            -0.1462,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.18,
+          -0.0731
+        ],
+        "plate": [
+          0.145,
+          0.0874,
+          0.0871
+        ],
+        "mat": [
+          0.1337,
+          0.0859
+        ],
+        "bottle": [
+          -0.2118,
+          -0.1462
+        ]
+      },
+      "error": null,
+      "wall_s": 150.9,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-025901-dispenser_plate_in-plain-s100-dream-1-beta",
+      "started_at": "2026-11-21T02:59:01-0800",
+      "median_call_s": 0.678,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "dispenser_plate_out",
+      "title": "Unload the dispenser carrier",
+      "prompt": "Take the plate off the dispenser's plate carrier and put it on the gray mat.",
+      "prompt_variant": "plain",
+      "seed": 100,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_mat": null,
+        "plate_on_mat": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1813,
+            -0.0736,
+            0.8199
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2118,
+            -0.1462,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.18,
+          -0.0731
+        ],
+        "plate": [
+          0.181,
+          -0.0729,
+          0.0029
+        ],
+        "mat": [
+          0.1337,
+          0.0859
+        ],
+        "bottle": [
+          -0.2118,
+          -0.1462
+        ]
+      },
+      "error": null,
+      "wall_s": 166.0,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-030133-dispenser_plate_out-plain-s100-dream-1-beta",
+      "started_at": "2026-11-21T03:01:33-0800",
+      "median_call_s": 0.64,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "cell_bottle_swirl",
+      "title": "Swirl the cell bottle",
+      "prompt": "Swirl the cell bottle to keep the cells mixed, then put it back.",
+      "prompt_variant": "plain",
+      "seed": 100,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 90.0,
+      "sim_s": 90.05,
+      "calls": 38,
+      "est_cost_usd": 0.0532,
+      "stages": {
+        "bottle_lifted": null,
+        "bottle_swirled": null,
+        "bottle_home": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "bottle": {
+          "pos": [
+            -0.2118,
+            -0.1462,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "plate": {
+          "pos": [
+            0.145,
+            0.0874,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.18,
+          -0.0731
+        ],
+        "plate": [
+          0.145,
+          0.0874,
+          0.0871
+        ],
+        "mat": [
+          0.1337,
+          0.0859
+        ],
+        "bottle": [
+          -0.2118,
+          -0.1462
+        ]
+      },
+      "error": null,
+      "wall_s": 106.6,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-030420-cell_bottle_swirl-plain-s100-dream-1-beta",
+      "started_at": "2026-11-21T03:04:20-0800",
+      "median_call_s": 0.696,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "plate_in_with_swirl",
+      "title": "Load the dispenser while swirling the cell bottle",
+      "prompt": "Load the plate onto the dispenser's plate carrier while your other hand keeps the cell bottle swirling.",
+      "prompt_variant": "plain",
+      "seed": 100,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_carrier": null,
+        "plate_seated": null,
+        "bottle_swirled": null,
+        "bottle_home": null
+      },
+      "stages_reached": 0,
+      "stages_total": 5,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.145,
+            0.0874,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2118,
+            -0.1462,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.18,
+          -0.0731
+        ],
+        "plate": [
+          0.145,
+          0.0874,
+          0.0871
+        ],
+        "mat": [
+          0.1337,
+          0.0859
+        ],
+        "bottle": [
+          -0.2118,
+          -0.1462
+        ]
+      },
+      "error": null,
+      "wall_s": 339.6,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-030608-plate_in_with_swirl-plain-s100-dream-1-beta",
+      "started_at": "2026-11-21T03:06:08-0800",
+      "median_call_s": 0.666,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "dispenser_plate_in",
+      "title": "Load a plate onto the dispenser carrier",
+      "prompt": "Put the plate on the dispenser's plate carrier.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_carrier": null,
+        "plate_seated": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1408,
+            0.1,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2227,
+            -0.1405,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.1833,
+          -0.0778
+        ],
+        "plate": [
+          0.1436,
+          0.1036,
+          0.1108
+        ],
+        "mat": [
+          0.1485,
+          0.0968
+        ],
+        "bottle": [
+          -0.2227,
+          -0.1405
+        ]
+      },
+      "error": null,
+      "wall_s": 181.4,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-031150-dispenser_plate_in-plain-s101-dream-1-beta",
+      "started_at": "2026-11-21T03:11:50-0800",
+      "median_call_s": 0.735,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "dispenser_plate_out",
+      "title": "Unload the dispenser carrier",
+      "prompt": "Take the plate off the dispenser's plate carrier and put it on the gray mat.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_mat": null,
+        "plate_on_mat": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1829,
+            -0.077,
+            0.8199
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2227,
+            -0.1405,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.1833,
+          -0.0778
+        ],
+        "plate": [
+          0.1829,
+          -0.077,
+          0.0037
+        ],
+        "mat": [
+          0.1485,
+          0.0968
+        ],
+        "bottle": [
+          -0.2227,
+          -0.1405
+        ]
+      },
+      "error": null,
+      "wall_s": 153.4,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-031453-dispenser_plate_out-plain-s101-dream-1-beta",
+      "started_at": "2026-11-21T03:14:53-0800",
+      "median_call_s": 0.676,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "cell_bottle_swirl",
+      "title": "Swirl the cell bottle",
+      "prompt": "Swirl the cell bottle to keep the cells mixed, then put it back.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 90.0,
+      "sim_s": 90.05,
+      "calls": 38,
+      "est_cost_usd": 0.0532,
+      "stages": {
+        "bottle_lifted": null,
+        "bottle_swirled": null,
+        "bottle_home": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "bottle": {
+          "pos": [
+            -0.2227,
+            -0.1405,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "plate": {
+          "pos": [
+            0.1436,
+            0.1036,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.1833,
+          -0.0778
+        ],
+        "plate": [
+          0.1436,
+          0.1036,
+          0.1108
+        ],
+        "mat": [
+          0.1485,
+          0.0968
+        ],
+        "bottle": [
+          -0.2227,
+          -0.1405
+        ]
+      },
+      "error": null,
+      "wall_s": 91.4,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-031727-cell_bottle_swirl-plain-s101-dream-1-beta",
+      "started_at": "2026-11-21T03:17:27-0800",
+      "median_call_s": 0.663,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "plate_in_with_swirl",
+      "title": "Load the dispenser while swirling the cell bottle",
+      "prompt": "Load the plate onto the dispenser's plate carrier while your other hand keeps the cell bottle swirling.",
+      "prompt_variant": "plain",
+      "seed": 101,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_carrier": null,
+        "plate_seated": null,
+        "bottle_swirled": null,
+        "bottle_home": null
+      },
+      "stages_reached": 0,
+      "stages_total": 5,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1436,
+            0.1036,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2227,
+            -0.1405,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.1833,
+          -0.0778
+        ],
+        "plate": [
+          0.1436,
+          0.1036,
+          0.1108
+        ],
+        "mat": [
+          0.1485,
+          0.0968
+        ],
+        "bottle": [
+          -0.2227,
+          -0.1405
+        ]
+      },
+      "error": null,
+      "wall_s": 168.5,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-031859-plate_in_with_swirl-plain-s101-dream-1-beta",
+      "started_at": "2026-11-21T03:18:59-0800",
+      "median_call_s": 0.791,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "dispenser_plate_in",
+      "title": "Load a plate onto the dispenser carrier",
+      "prompt": "Put the plate on the dispenser's plate carrier.",
+      "prompt_variant": "plain",
+      "seed": 102,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_carrier": null,
+        "plate_seated": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.138,
+            0.0755,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2187,
+            -0.1401,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.1598,
+          -0.0733
+        ],
+        "plate": [
+          0.1542,
+          0.0904,
+          0.1174
+        ],
+        "mat": [
+          0.1497,
+          0.0909
+        ],
+        "bottle": [
+          -0.2187,
+          -0.1401
+        ]
+      },
+      "error": null,
+      "wall_s": 180.4,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-032149-dispenser_plate_in-plain-s102-dream-1-beta",
+      "started_at": "2026-11-21T03:21:49-0800",
+      "median_call_s": 0.706,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "dispenser_plate_out",
+      "title": "Unload the dispenser carrier",
+      "prompt": "Take the plate off the dispenser's plate carrier and put it on the gray mat.",
+      "prompt_variant": "plain",
+      "seed": 102,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_mat": null,
+        "plate_on_mat": 71.75
+      },
+      "stages_reached": 1,
+      "stages_total": 3,
+      "progress": 0.333,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.1624,
+            0.0773,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2187,
+            -0.1401,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.1598,
+          -0.0733
+        ],
+        "plate": [
+          0.1602,
+          -0.0734,
+          0.0039
+        ],
+        "mat": [
+          0.1497,
+          0.0909
+        ],
+        "bottle": [
+          -0.2187,
+          -0.1401
+        ]
+      },
+      "error": null,
+      "wall_s": 166.1,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-032450-dispenser_plate_out-plain-s102-dream-1-beta",
+      "started_at": "2026-11-21T03:24:50-0800",
+      "median_call_s": 0.808,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "cell_bottle_swirl",
+      "title": "Swirl the cell bottle",
+      "prompt": "Swirl the cell bottle to keep the cells mixed, then put it back.",
+      "prompt_variant": "plain",
+      "seed": 102,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 90.0,
+      "sim_s": 90.05,
+      "calls": 38,
+      "est_cost_usd": 0.0532,
+      "stages": {
+        "bottle_lifted": null,
+        "bottle_swirled": null,
+        "bottle_home": null
+      },
+      "stages_reached": 0,
+      "stages_total": 3,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "bottle": {
+          "pos": [
+            -0.2187,
+            -0.1401,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "plate": {
+          "pos": [
+            0.1542,
+            0.0904,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.1598,
+          -0.0733
+        ],
+        "plate": [
+          0.1542,
+          0.0904,
+          0.1174
+        ],
+        "mat": [
+          0.1497,
+          0.0909
+        ],
+        "bottle": [
+          -0.2187,
+          -0.1401
+        ]
+      },
+      "error": null,
+      "wall_s": 94.4,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-032737-cell_bottle_swirl-plain-s102-dream-1-beta",
+      "started_at": "2026-11-21T03:27:37-0800",
+      "median_call_s": 0.724,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    },
+    {
+      "task": "plate_in_with_swirl",
+      "title": "Load the dispenser while swirling the cell bottle",
+      "prompt": "Load the plate onto the dispenser's plate carrier while your other hand keeps the cell bottle swirling.",
+      "prompt_variant": "plain",
+      "seed": 102,
+      "model": "dreamlabs/dream-1-beta",
+      "policy": "dream",
+      "seconds_allowed": 150.0,
+      "sim_s": 150.0,
+      "calls": 63,
+      "est_cost_usd": 0.0882,
+      "stages": {
+        "plate_lifted": null,
+        "plate_over_carrier": null,
+        "plate_seated": null,
+        "bottle_swirled": null,
+        "bottle_home": null
+      },
+      "stages_reached": 0,
+      "stages_total": 5,
+      "progress": 0.0,
+      "success": false,
+      "success_at_s": null,
+      "success_at_end": false,
+      "objects": {
+        "plate": {
+          "pos": [
+            0.2217,
+            0.0993,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        },
+        "bottle": {
+          "pos": [
+            -0.2187,
+            -0.1401,
+            0.7599
+          ],
+          "tilt_deg": 0.0
+        }
+      },
+      "layout": {
+        "dispenser": [
+          0.1598,
+          -0.0733
+        ],
+        "plate": [
+          0.1542,
+          0.0904,
+          0.1174
+        ],
+        "mat": [
+          0.1497,
+          0.0909
+        ],
+        "bottle": [
+          -0.2187,
+          -0.1401
+        ]
+      },
+      "error": null,
+      "wall_s": 152.8,
+      "dir": "runs/2026-11-21-tending-zero-shot/20261121-032912-plate_in_with_swirl-plain-s102-dream-1-beta",
+      "started_at": "2026-11-21T03:29:12-0800",
+      "median_call_s": 0.685,
+      "versions": {
+        "labbench": "0.1.0",
+        "code": "92c256eb309b",
+        "dreamlabs": "1.0.42",
+        "mujoco": "4.0.1",
+        "tending": "ba4601eda5dc"
+      }
+    }
+  ]
+}

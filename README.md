@@ -83,13 +83,17 @@ public operator's manual, with its plate carrier out and a cell bottle beside it
 
 | # | Task | The robot is told | Passes when | Time limit |
 |---|---|---|---|---|
-| 16 | `dispenser_plate_in` | Put the plate on the dispenser's plate carrier. | The plate sits flat in the carrier pocket, A1 at the back left, hands out of the carrier's path, after a level lift. A dropped plate does not count. | 150 s |
-| 17 | `dispenser_plate_out` | Take the plate off the dispenser's plate carrier and put it on the gray mat. | The plate lies flat and wholly on the mat and the carrier is empty, after a level lift. A plate tipped out and pushed does not count. | 150 s |
+| 16 | `dispenser_plate_in` | Put the plate on the dispenser's plate carrier. | The plate sits flat in the carrier pocket, A1 at the back left, hands out of the carrier's path, after a level lift and a level pass over the carrier. A dropped plate does not count. | 150 s |
+| 17 | `dispenser_plate_out` | Take the plate off the dispenser's plate carrier and put it on the gray mat. | The plate lies flat and wholly on the mat and the carrier is empty, after a level lift and a level pass over the mat. A plate tipped out and pushed does not count. | 150 s |
 | 18 | `cell_bottle_swirl` | Swirl the cell bottle to keep the cells mixed, then put it back. | The bottle was lifted and swirled upright for 3 turns or more, then set back on its spot. Tipping it past 30 degrees fails. | 90 s |
 | 19 | `plate_in_with_swirl` | Load the plate onto the dispenser's plate carrier while your other hand keeps the cell bottle swirling. | Everything task 16 asks, with the bottle swirling for at least half of the time and half of the plate's travel to the nest, then set back on its spot. | 150 s |
 
-- **Held-out run: registered, not yet run.** Dream-1, zero-shot, 3 layouts per task (100 to 102), under
-  [this protocol](runs/2026-11-21-tending-zero-shot/PROTOCOL.md), committed before the first take.
+- **Held-out run: 0 of 12.** Dream-1, zero-shot, 3 layouts per task (100 to 102), under
+  [this protocol](runs/2026-11-21-tending-zero-shot/PROTOCOL.md), committed before the first take. No task passed
+  on any layout ([what happened](runs/2026-11-21-tending-zero-shot/README.md)). In 1 take the robot tipped the
+  plate out of the carrier by 1 end, carried it tilted 27 to 46 degrees, and let go with its low end on the mat,
+  so it fell flat there. The rule asks for a level lift and a level pass over the mat, as a filled plate needs, so
+  it is not a pass. In 7 of the 12 takes the robot touched neither the plate nor the bottle.
 - **First look: 0 of 4.** Dream-1 on practice layout 0, 1 completed take per task, no stage reached. The takes can
   be replayed offline: [runs/2026-11-19-tending-first-look](runs/2026-11-19-tending-first-look/README.md).
 - **Scripted reference: passes all 4 tasks** on practice layouts 0 to 4 and on the 3 held-out layouts. It reads

@@ -1,0 +1,56 @@
+{
+  "task": "dispenser_plate_in",
+  "seed": 102,
+  "stages": {
+    "plate_lifted": null,
+    "plate_over_carrier": null,
+    "plate_seated": null
+  },
+  "success": false,
+  "success_at_s": null,
+  "objects": {
+    "plate": {
+      "pos": [
+        0.138,
+        0.0755,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    },
+    "bottle": {
+      "pos": [
+        -0.2187,
+        -0.1401,
+        0.7599
+      ],
+      "tilt_deg": 0.0
+    }
+  },
+  "motion": {
+    "plate": {
+      "moved_max_xy_m": 0.022,
+      "rose_max_m": 0.0,
+      "tilt_max_deg": 0.4,
+      "touched_steps": 87,
+      "low_corner_rose_max_m": 0.0,
+      "low_corner_rose_max_m_under_10_deg": 0.0
+    },
+    "bottle": {
+      "moved_max_xy_m": 0.0,
+      "rose_max_m": 0.0,
+      "tilt_max_deg": 0.0,
+      "touched_steps": 0
+    }
+  },
+  "steps": 3033,
+  "actions_sha256": "f4f402d4ea62ec46af3d889577d551f9206e9196e02cc1e7f520feb3a58af4e8",
+  "versions": {
+    "labbench": "0.1.0",
+    "code": "92c256eb309b",
+    "dreamlabs": "1.0.42",
+    "mujoco": "4.0.1",
+    "tending": "ba4601eda5dc"
+  },
+  "status": "agrees",
+  "problems": []
+}
