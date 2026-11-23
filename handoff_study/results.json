@@ -1,0 +1,294 @@
+{
+  "study": "Can the reader use the plate?",
+  "scorer_id": "fbff7c29e4dd",
+  "design_id": "cbb71bf79743",
+  "trials_assigned": 204,
+  "trials_done": 0,
+  "done_on_bench": 0,
+  "done_in_simulation": 0,
+  "verdict_rows": 0,
+  "setup_entries": 0,
+  "status": [
+    {
+      "experiment": "camera",
+      "arm": "hand_nominal",
+      "where": "bench",
+      "assigned": 24,
+      "planned": 24,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    },
+    {
+      "experiment": "camera",
+      "arm": "hand_challenge",
+      "where": "bench",
+      "assigned": 24,
+      "planned": 24,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    },
+    {
+      "experiment": "teaching_sim",
+      "arm": "dream1_demos_0",
+      "where": "simulation",
+      "assigned": 30,
+      "planned": 30,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    },
+    {
+      "experiment": "teaching_sim",
+      "arm": "dream1_demos_5",
+      "where": "simulation",
+      "assigned": 30,
+      "planned": 30,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    },
+    {
+      "experiment": "teaching_sim",
+      "arm": "dream1_demos_20",
+      "where": "simulation",
+      "assigned": 30,
+      "planned": 30,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    },
+    {
+      "experiment": "teaching_sim",
+      "arm": "dream1_demos_50",
+      "where": "simulation",
+      "assigned": 30,
+      "planned": 30,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    },
+    {
+      "experiment": "hardware",
+      "arm": "dream1_demos_0",
+      "where": "bench",
+      "assigned": 12,
+      "planned": 12,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    },
+    {
+      "experiment": "hardware",
+      "arm": "dream1_demos_50",
+      "where": "bench",
+      "assigned": 12,
+      "planned": 12,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    },
+    {
+      "experiment": "hardware",
+      "arm": "manual",
+      "where": "bench",
+      "assigned": 12,
+      "planned": 12,
+      "done": 0,
+      "unverified": 0,
+      "interrupted": 0,
+      "excluded": 0
+    }
+  ],
+  "reader": [
+    {
+      "experiment": "camera",
+      "arm": "hand_nominal",
+      "done": 0,
+      "usable": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "valid_with_help": 0,
+      "invalid": 0,
+      "read_faults": {},
+      "first_failed_stages": {}
+    },
+    {
+      "experiment": "camera",
+      "arm": "hand_challenge",
+      "done": 0,
+      "usable": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "valid_with_help": 0,
+      "invalid": 0,
+      "read_faults": {},
+      "first_failed_stages": {}
+    },
+    {
+      "experiment": "hardware",
+      "arm": "dream1_demos_0",
+      "done": 0,
+      "usable": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "valid_with_help": 0,
+      "invalid": 0,
+      "read_faults": {},
+      "first_failed_stages": {}
+    },
+    {
+      "experiment": "hardware",
+      "arm": "dream1_demos_50",
+      "done": 0,
+      "usable": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "valid_with_help": 0,
+      "invalid": 0,
+      "read_faults": {},
+      "first_failed_stages": {}
+    },
+    {
+      "experiment": "hardware",
+      "arm": "manual",
+      "done": 0,
+      "usable": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "valid_with_help": 0,
+      "invalid": 0,
+      "read_faults": {},
+      "first_failed_stages": {}
+    }
+  ],
+  "simulation": [
+    {
+      "experiment": "teaching_sim",
+      "arm": "dream1_demos_0",
+      "done": 0,
+      "placement_pass": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "seated_pass": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "first_failed_stages": {}
+    },
+    {
+      "experiment": "teaching_sim",
+      "arm": "dream1_demos_5",
+      "done": 0,
+      "placement_pass": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "seated_pass": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "first_failed_stages": {}
+    },
+    {
+      "experiment": "teaching_sim",
+      "arm": "dream1_demos_20",
+      "done": 0,
+      "placement_pass": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "seated_pass": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "first_failed_stages": {}
+    },
+    {
+      "experiment": "teaching_sim",
+      "arm": "dream1_demos_50",
+      "done": 0,
+      "placement_pass": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "seated_pass": {
+        "k": 0,
+        "n": 0,
+        "range_95": null
+      },
+      "first_failed_stages": {}
+    }
+  ],
+  "camera": [],
+  "camera_by_day": [],
+  "camera_same_verdict": [],
+  "operator_time": [],
+  "setup_time": [],
+  "paired": [
+    {
+      "experiment": "teaching_sim",
+      "outcome": "placement_pass",
+      "pairs": 30,
+      "both_pass": 0,
+      "only_50": 0,
+      "only_0": 0,
+      "neither": 0,
+      "incomplete": 30
+    },
+    {
+      "experiment": "teaching_sim",
+      "outcome": "seated_pass",
+      "pairs": 30,
+      "both_pass": 0,
+      "only_50": 0,
+      "only_0": 0,
+      "neither": 0,
+      "incomplete": 30
+    },
+    {
+      "experiment": "hardware",
+      "outcome": "usable",
+      "pairs": 12,
+      "both_pass": 0,
+      "only_50": 0,
+      "only_0": 0,
+      "neither": 0,
+      "incomplete": 12
+    }
+  ],
+  "not_done": [],
+  "caveats": [
+    "Every range is the exact (Clopper-Pearson) 95% range, two-sided. It treats trials as independent.",
+    "The 2 placements of a camera pair share a layout and a day, so they are not independent.",
+    "Original and relit pictures show the same placements: 2 looks at 1 placement, not 2 placements.",
+    "The sizes are those of a feasibility pilot: 48 placements, 120 simulated attempts, 24 robot attempts, 12 manual handoffs."
+  ]
+}

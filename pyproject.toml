@@ -23,6 +23,7 @@ dependencies = [
 labbench = "labbench.__main__:main"
 camera-env = "camera_env.__main__:main"
 tending = "tending.__main__:main"
+handoff-study = "handoff_study.__main__:main"
 
 [tool.setuptools]
-packages = ["labbench", "camera_env", "sim_demos", "tending"]
+packages = ["labbench", "camera_env", "sim_demos", "tending", "handoff_study"]

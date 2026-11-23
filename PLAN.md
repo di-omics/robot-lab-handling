@@ -42,6 +42,9 @@ it work when taught, how much teaching, and does that hold on a real bench.
 - 2026-11-21: 4 instrument tending tasks are added (a plate dispenser and its cell bottle, tasks 16
   to 19). Dream-1 zero-shot: 0 of 4 in a first look on 1 practice layout, then 0 of 12 in the
   held-out run on 3 layouts.
+- 2026-11-22: a plan for the first check on a real bench,
+  [Can the reader use the plate?](handoff_study/README.md), with a trial sheet of 204 planned trials
+  and a scorer. 0 trials have run, and no reader, plate or real robot has been used.
 
 ## Steps, in order
 
@@ -89,6 +92,8 @@ skipped quietly.
      chore.
    - Then teaching from real demonstrations, and the 1 chore that does need a lab: handing a plate
      to the deck of a liquid handler.
+   - The first bench check is planned in [handoff_study/](handoff_study/README.md). There a plate
+     reader judges each plate handoff, and the camera part can run before any robot arrives.
    - Gate: for each chore, the gap between the simulated and the real pass count. A chore where
      the simulator is wrong is reported as a finding about the simulator.
 7. **More chores.** The set grows past 15. Started: 4 instrument tending tasks, in `tending/`:

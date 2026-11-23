@@ -38,6 +38,7 @@ position or into a hotel, stacking and unstacking plates, binning used tubes.
 | Record scripted demonstrations | `sim_demos/` ([notes](sim_demos/NOTES.md)) | `python -m sim_demos.record --keep 50` |
 | Tend an instrument: plate dispenser and cell bottle | `tending/` ([tasks and rules](tending/README.md)) | `python -m tending stills --task plate_in_with_swirl --seed 0` |
 | Run a model on the tending tasks and replay the takes | `scripts/tending_run.py`, `scripts/tending_replay.py` | `python scripts/tending_replay.py runs/2026-11-19-tending-first-look` |
+| Read the plan for the first bench check (can the reader use the plate?) and score its trials | `handoff_study/` ([plan](handoff_study/README.md)) | `python -m handoff_study score` |
 | Know the rules a scored run followed | `PROTOCOL.md`, `DEVIATIONS.md` | |
 | Know what comes next | `PLAN.md` | |
 
@@ -162,6 +163,15 @@ On plate placement, Codex passed 2 of 3 layouts. It lifted the plate over the tr
 Read the [paired scores, per-layout stages and uncertainty intervals](runs/2026-11-18-camera-comparison/RESULTS.md) and [pre-registered pilot protocol](runs/2026-11-18-camera-comparison/PROTOCOL.md). A separate [Dream baseline over these first 15 tasks](runs/2026-11-18-zero-shot/results.md) covers all 45 task-layout pairs: 7 passes by the frozen rules, and none on the 6 plate tasks (0 of 18). Its frozen handover rule awarded a pass on layout 102 when the right arm picked up the tube on its own. [Deviations and incomplete takes](DEVIATIONS.md).
 
 The scripted plate expert completed all 50 demonstration layouts. The saved dataset passed Dream's local validation with 10,049 frames at 10 fps across three cameras. The expert has access to object poses. Its demonstration results are listed separately from the model scores. [Demonstration notes and preview](sim_demos/NOTES.md). [Proposed held-out experiment](sim_demos/PROPOSAL.md)
+
+## Planned: can the reader use the plate?
+
+**A plan, not run: 204 planned trials, 0 results.** [The plan](handoff_study/README.md) is for the first check of
+the `plate_to_tray` chore on a real bench: a robot or a person puts a dry plate in a plate reader's carrier. It asks
+whether the reader gives a valid result on the first try, and whether a camera can tell before the reader runs. It
+also counts human interventions and hands-on minutes per usable read. The trials are 48 dry placements by hand, 120
+attempts in simulation, 24 robot attempts on real arms and 12 timed manual handoffs. No reader, plate or real
+robot has been used.
 
 ## Limits
 
